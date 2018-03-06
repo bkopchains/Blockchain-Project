@@ -13,8 +13,6 @@ class Blockchain:
 
     '''
     def __init__(self):
-
-
         # Use this lock to protect internal data of this class from
         # the multi-threaded server.  Wrap code modifies the
         # blockchain in the context "with self.lock:".  Be careful not
@@ -30,7 +28,7 @@ class Blockchain:
 
     '''
     def get_message_queue_size(self):
-        return 0
+        return self.msg_queue.qsize()
         
         
     '''Takes a string containing a message received by the server from a
@@ -61,9 +59,7 @@ class Blockchain:
 
     '''
     def add_block_str(self, block_str):
-
-        #print(block_str)
-        
+        block_str
         return False
 
 
