@@ -467,7 +467,7 @@ class Server:
                     self.log.info("Thread: %d - Command: %s - From: %s:%d - Sent %d blocks to update peer" %
                                      (threading.get_ident() % 10000, command, cl_host, cl_port, len(block_strs)))
                 except:
-                    self.log.warning("Thread: %d - Command: %s - From: %s:%d - Warning: Recieved invalid UPDATE_REQUEST" %
+                    self.log.warning("Thread: %d - Command: %s - From: %s:%d - Warning: Received invalid UPDATE_REQUEST" %
                                   (threading.get_ident() % 10000, command, cl_host, cl_port))
                     f_out.write("ERROR Time not recognized")
                     f_out.flush()

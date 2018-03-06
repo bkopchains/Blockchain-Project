@@ -1,5 +1,6 @@
 import queue
 import threading
+import binascii
 import logging
 import traceback, sys
 from blockchain_constants import *
@@ -19,6 +20,7 @@ class Blockchain:
         # blockchain in the context "with self.lock:".  Be careful not
         # to nest these contexts or it will cause deadlock.
         self.lock = threading.Lock()
+        self.msg_queue = queue.Queue()
         
 
         pass
@@ -41,6 +43,9 @@ class Blockchain:
     '''
     def add_message_str(self, msg_str):
 
+        # for item in msg_str.split("&"):
+        #     print(item)
+        print(binascii.unhexlify(msg_str.split("&")[1].split(":")[1]))
         #print(msg_str)
         
         return False
