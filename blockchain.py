@@ -19,7 +19,8 @@ class Blockchain:
         # to nest these contexts or it will cause deadlock.
         self.lock = threading.Lock()
         self.msg_queue = queue.Queue()
-        
+        self.OG_block = None
+        self.parent_node = None
 
         pass
         
