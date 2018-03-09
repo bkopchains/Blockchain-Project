@@ -73,6 +73,7 @@ class Blockchain:
         #     print(item)
         msg = Message(msg_str)
         msg.print()
+        msg.verify()
         #print(msg_str)
         
         return False

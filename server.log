@@ -621,3 +621,189 @@ Traceback (most recent call last):
     raise InvalidSignature
 cryptography.exceptions.InvalidSignature
 
+2018-03-09 17:23:49,025 - Server - WARNING - =========== Server logging started ==========
+2018-03-09 17:23:49,150 - Server - INFO - Reading peers from peers.txt.
+2018-03-09 17:23:49,314 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-09 17:23:49,463 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-09 17:23:49,500 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 17:23:49,505 - Server - WARNING - ============ Server init complete ===========
+2018-03-09 17:23:49,528 - Server - INFO - Started up on port 50000
+2018-03-09 17:23:49,545 - Server - INFO - Thread: 9616 - Start requesting peers. 2 peers currently
+2018-03-09 17:23:49,570 - Server - WARNING - Thread: 9952 - Started updating from peers
+2018-03-09 17:23:49,706 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 17:23:49,712 - Server - WARNING - Thread: 9616 - Complete requesting peers. 2 peers currently
+2018-03-09 17:23:49,816 - Server - INFO - Thread: 9952 - Received 11 blocks from 149.106.60.81.
+2018-03-09 17:23:49,822 - Server - WARNING - Thread: 9952 - Completed updating from peers
+2018-03-09 17:23:59,416 - Server - ERROR - Thread: 9616 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50434 - Exception in handling request
+Traceback (most recent call last):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/network.py", line 422, in handle_connection
+    elif self.blockchain.add_message_str(msg_str):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/blockchain.py", line 76, in add_message_str
+    msg.verify()
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/message.py", line 39, in verify
+    hashes.SHA256()
+  File "/Users/Ben_Kopchains/Documents/Homework/__THESIS/Python Stats/venv/lib/python3.4/site-packages/cryptography/hazmat/backends/openssl/rsa.py", line 475, in verify
+    self._backend, padding, algorithm, self, signature, data
+  File "/Users/Ben_Kopchains/Documents/Homework/__THESIS/Python Stats/venv/lib/python3.4/site-packages/cryptography/hazmat/backends/openssl/rsa.py", line 269, in _rsa_sig_verify
+    raise InvalidSignature
+cryptography.exceptions.InvalidSignature
+
+2018-03-09 17:26:58,660 - Server - WARNING - =========== Server logging started ==========
+2018-03-09 17:26:58,773 - Server - INFO - Reading peers from peers.txt.
+2018-03-09 17:26:58,941 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-09 17:26:59,081 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-09 17:26:59,115 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 17:26:59,120 - Server - WARNING - ============ Server init complete ===========
+2018-03-09 17:26:59,144 - Server - INFO - Started up on port 50000
+2018-03-09 17:26:59,162 - Server - INFO - Thread: 3312 - Start requesting peers. 2 peers currently
+2018-03-09 17:26:59,186 - Server - WARNING - Thread: 3648 - Started updating from peers
+2018-03-09 17:27:00,204 - Server - INFO - Thread: 3312 - Warning: Punishing peer 149.106.60.81.
+2018-03-09 17:27:00,210 - Server - INFO - Thread: 3648 - Warning: Punishing peer 149.106.60.81.
+2018-03-09 17:27:00,233 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 1)]
+2018-03-09 17:27:00,270 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 2)]
+2018-03-09 17:27:00,275 - Server - WARNING - Thread: 3648 - Completed updating from peers
+2018-03-09 17:27:00,292 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 2)]
+2018-03-09 17:27:00,299 - Server - WARNING - Thread: 3312 - Complete requesting peers. 2 peers currently
+2018-03-09 17:27:04,284 - Server - WARNING - =========== Server logging started ==========
+2018-03-09 17:27:04,385 - Server - INFO - Reading peers from peers.txt.
+2018-03-09 17:27:04,539 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-09 17:27:04,691 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-09 17:27:04,732 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 17:27:04,737 - Server - WARNING - ============ Server init complete ===========
+2018-03-09 17:27:04,748 - Server - ERROR - Unable to start on port 50000
+2018-03-09 17:27:14,073 - Server - ERROR - Thread: 3312 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50628 - Exception in handling request
+Traceback (most recent call last):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/network.py", line 422, in handle_connection
+    elif self.blockchain.add_message_str(msg_str):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/blockchain.py", line 76, in add_message_str
+    msg.verify()
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/message.py", line 33, in verify
+    sigPlaintext = pubkey.decrypt(
+AttributeError: '_RSAPublicKey' object has no attribute 'decrypt'
+
+2018-03-09 17:28:43,507 - Server - WARNING - =========== Server logging started ==========
+2018-03-09 17:28:43,618 - Server - INFO - Reading peers from peers.txt.
+2018-03-09 17:28:43,774 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-09 17:28:43,918 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-09 17:28:43,953 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 17:28:43,953 - Server - WARNING - ============ Server init complete ===========
+2018-03-09 17:28:43,972 - Server - INFO - Started up on port 50000
+2018-03-09 17:28:43,990 - Server - INFO - Thread: 9232 - Start requesting peers. 2 peers currently
+2018-03-09 17:28:44,010 - Server - WARNING - Thread: 9568 - Started updating from peers
+2018-03-09 17:28:44,157 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 17:28:44,162 - Server - WARNING - Thread: 9232 - Complete requesting peers. 2 peers currently
+2018-03-09 17:28:44,247 - Server - INFO - Thread: 9568 - Received 11 blocks from 149.106.60.81.
+2018-03-09 17:28:44,252 - Server - WARNING - Thread: 9568 - Completed updating from peers
+2018-03-09 17:29:00,020 - Server - ERROR - Thread: 9232 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50698 - Exception in handling request
+Traceback (most recent call last):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/network.py", line 422, in handle_connection
+    elif self.blockchain.add_message_str(msg_str):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/blockchain.py", line 76, in add_message_str
+    msg.verify()
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/message.py", line 40, in verify
+    hashes.SHA256()
+  File "/Users/Ben_Kopchains/Documents/Homework/__THESIS/Python Stats/venv/lib/python3.4/site-packages/cryptography/hazmat/backends/openssl/rsa.py", line 475, in verify
+    self._backend, padding, algorithm, self, signature, data
+  File "/Users/Ben_Kopchains/Documents/Homework/__THESIS/Python Stats/venv/lib/python3.4/site-packages/cryptography/hazmat/backends/openssl/rsa.py", line 269, in _rsa_sig_verify
+    raise InvalidSignature
+cryptography.exceptions.InvalidSignature
+
+2018-03-09 17:29:11,371 - Server - ERROR - Thread: 9232 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50710 - Exception in handling request
+Traceback (most recent call last):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/network.py", line 422, in handle_connection
+    elif self.blockchain.add_message_str(msg_str):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/blockchain.py", line 76, in add_message_str
+    msg.verify()
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/message.py", line 40, in verify
+    hashes.SHA256()
+  File "/Users/Ben_Kopchains/Documents/Homework/__THESIS/Python Stats/venv/lib/python3.4/site-packages/cryptography/hazmat/backends/openssl/rsa.py", line 475, in verify
+    self._backend, padding, algorithm, self, signature, data
+  File "/Users/Ben_Kopchains/Documents/Homework/__THESIS/Python Stats/venv/lib/python3.4/site-packages/cryptography/hazmat/backends/openssl/rsa.py", line 269, in _rsa_sig_verify
+    raise InvalidSignature
+cryptography.exceptions.InvalidSignature
+
+2018-03-09 17:29:40,032 - Server - WARNING - =========== Server logging started ==========
+2018-03-09 17:29:40,190 - Server - INFO - Reading peers from peers.txt.
+2018-03-09 17:29:40,351 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-09 17:29:40,490 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-09 17:29:40,527 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 17:29:40,532 - Server - WARNING - ============ Server init complete ===========
+2018-03-09 17:29:40,550 - Server - INFO - Started up on port 50000
+2018-03-09 17:29:40,567 - Server - INFO - Thread: 928 - Start requesting peers. 2 peers currently
+2018-03-09 17:29:40,593 - Server - WARNING - Thread: 1264 - Started updating from peers
+2018-03-09 17:29:40,721 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 17:29:40,727 - Server - WARNING - Thread: 928 - Complete requesting peers. 2 peers currently
+2018-03-09 17:29:40,847 - Server - INFO - Thread: 1264 - Received 11 blocks from 149.106.60.81.
+2018-03-09 17:29:40,853 - Server - WARNING - Thread: 1264 - Completed updating from peers
+2018-03-09 17:29:44,050 - Server - ERROR - Thread: 928 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50734 - Exception in handling request
+Traceback (most recent call last):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/network.py", line 422, in handle_connection
+    elif self.blockchain.add_message_str(msg_str):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/blockchain.py", line 76, in add_message_str
+    msg.verify()
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/message.py", line 40, in verify
+    hashes.SHA512()
+  File "/Users/Ben_Kopchains/Documents/Homework/__THESIS/Python Stats/venv/lib/python3.4/site-packages/cryptography/hazmat/backends/openssl/rsa.py", line 475, in verify
+    self._backend, padding, algorithm, self, signature, data
+  File "/Users/Ben_Kopchains/Documents/Homework/__THESIS/Python Stats/venv/lib/python3.4/site-packages/cryptography/hazmat/backends/openssl/rsa.py", line 269, in _rsa_sig_verify
+    raise InvalidSignature
+cryptography.exceptions.InvalidSignature
+
+2018-03-09 17:30:53,203 - Server - WARNING - =========== Server logging started ==========
+2018-03-09 17:30:53,309 - Server - INFO - Reading peers from peers.txt.
+2018-03-09 17:30:53,466 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-09 17:30:53,611 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-09 17:30:53,648 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 17:30:53,654 - Server - WARNING - ============ Server init complete ===========
+2018-03-09 17:30:53,677 - Server - INFO - Started up on port 50000
+2018-03-09 17:30:53,694 - Server - INFO - Thread: 464 - Start requesting peers. 2 peers currently
+2018-03-09 17:30:53,715 - Server - WARNING - Thread: 800 - Started updating from peers
+2018-03-09 17:30:53,858 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 17:30:53,864 - Server - WARNING - Thread: 464 - Complete requesting peers. 2 peers currently
+2018-03-09 17:30:53,954 - Server - INFO - Thread: 800 - Received 11 blocks from 149.106.60.81.
+2018-03-09 17:30:53,960 - Server - WARNING - Thread: 800 - Completed updating from peers
+2018-03-09 17:30:59,063 - Server - ERROR - Thread: 464 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50804 - Exception in handling request
+Traceback (most recent call last):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/network.py", line 422, in handle_connection
+    elif self.blockchain.add_message_str(msg_str):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/blockchain.py", line 76, in add_message_str
+    msg.verify()
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/message.py", line 41, in verify
+    hashes.SHA256()
+  File "/Users/Ben_Kopchains/Documents/Homework/__THESIS/Python Stats/venv/lib/python3.4/site-packages/cryptography/hazmat/backends/openssl/rsa.py", line 475, in verify
+    self._backend, padding, algorithm, self, signature, data
+  File "/Users/Ben_Kopchains/Documents/Homework/__THESIS/Python Stats/venv/lib/python3.4/site-packages/cryptography/hazmat/backends/openssl/rsa.py", line 257, in _rsa_sig_verify
+    backend._lib.EVP_PKEY_verify_init
+  File "/Users/Ben_Kopchains/Documents/Homework/__THESIS/Python Stats/venv/lib/python3.4/site-packages/cryptography/hazmat/backends/openssl/rsa.py", line 191, in _rsa_sig_setup
+    padding_enum = _rsa_sig_determine_padding(backend, key, padding, algorithm)
+  File "/Users/Ben_Kopchains/Documents/Homework/__THESIS/Python Stats/venv/lib/python3.4/site-packages/cryptography/hazmat/backends/openssl/rsa.py", line 184, in _rsa_sig_determine_padding
+    _Reasons.UNSUPPORTED_PADDING
+cryptography.exceptions.UnsupportedAlgorithm: EME-OAEP is not supported by this backend.
+
+2018-03-09 17:31:42,297 - Server - WARNING - =========== Server logging started ==========
+2018-03-09 17:31:42,391 - Server - INFO - Reading peers from peers.txt.
+2018-03-09 17:31:42,563 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-09 17:31:42,713 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-09 17:31:42,752 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 17:31:42,758 - Server - WARNING - ============ Server init complete ===========
+2018-03-09 17:31:42,769 - Server - INFO - Started up on port 50000
+2018-03-09 17:31:42,787 - Server - INFO - Thread: 7792 - Start requesting peers. 2 peers currently
+2018-03-09 17:31:42,810 - Server - WARNING - Thread: 8128 - Started updating from peers
+2018-03-09 17:31:42,959 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 17:31:42,965 - Server - WARNING - Thread: 7792 - Complete requesting peers. 2 peers currently
+2018-03-09 17:31:43,047 - Server - INFO - Thread: 8128 - Received 11 blocks from 149.106.60.81.
+2018-03-09 17:31:43,053 - Server - WARNING - Thread: 8128 - Completed updating from peers
+2018-03-09 17:31:59,346 - Server - ERROR - Thread: 7792 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50870 - Exception in handling request
+Traceback (most recent call last):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/network.py", line 422, in handle_connection
+    elif self.blockchain.add_message_str(msg_str):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/blockchain.py", line 76, in add_message_str
+    msg.verify()
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/message.py", line 40, in verify
+    hashes.SHA256()
+  File "/Users/Ben_Kopchains/Documents/Homework/__THESIS/Python Stats/venv/lib/python3.4/site-packages/cryptography/hazmat/backends/openssl/rsa.py", line 475, in verify
+    self._backend, padding, algorithm, self, signature, data
+  File "/Users/Ben_Kopchains/Documents/Homework/__THESIS/Python Stats/venv/lib/python3.4/site-packages/cryptography/hazmat/backends/openssl/rsa.py", line 269, in _rsa_sig_verify
+    raise InvalidSignature
+cryptography.exceptions.InvalidSignature
+
