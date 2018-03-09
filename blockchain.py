@@ -42,6 +42,7 @@ class Blockchain:
 
         self.lock = threading.Lock()
         self.msg_queue = queue.Queue()
+        
         self.parent_node = None
         self.OG_block = None
 
