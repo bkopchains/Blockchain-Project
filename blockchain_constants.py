@@ -8,6 +8,9 @@ TIMEOUT = 1.0
 MESSAGE_TYPE = 0
 BLOCK_TYPE = 1
 
+MESSAGE_PUBLIC=2
+MESSAGE_PRIVATE=3
+
 DEFAULT_PORT = 50000
 MAIN_HOST = "andersm2-macpro.union.edu"  # Test
 #MAIN_HOST = "andersm2-vrtower.union.edu"  # Production

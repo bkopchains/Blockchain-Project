@@ -1,6 +1,7 @@
 import queue
 import threading
 import binascii
+from message import *
 from cryptography.hazmat.primitives.asymmetric import rsa
 
 import logging
@@ -70,6 +71,8 @@ class Blockchain:
 
         # for item in msg_str.split("&"):
         #     print(item)
+        msg = Message(msg_str)
+        msg.print()
         print(binascii.unhexlify(msg_str.split("&")[1].split(":")[1]))
         print(binascii.unhexlify(msg_str.split("&")[2]))
         rsa.utils.signature
