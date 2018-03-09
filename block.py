@@ -1,8 +1,15 @@
-import random,binascii
+import random
+
 class Block:
     def __init__(self):
-        self.nonce;
+        self.nonce = None;
+        self.parentNode;
 
 
-    def generate_nonce(length=64):
-        return binascii.hexlify(random.random(length))
+    def generateNonce(self):
+        nonce = random.randint(1, 100000)
+        print(nonce)
+
+
+testblock = Block()
+testblock.generateNonce()
