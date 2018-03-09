@@ -5,9 +5,9 @@ class Block:
         self.nonce = self.generateNonce();
         self.parentNode = None;
 
-
+    # returns a hexlified random 64 bit nonce
     def generateNonce(self):
-        return  binascii.hexlify(str(random.getrandbits(64)).encode())
+        return binascii.hexlify(str(random.getrandbits(64)).encode())
 
     def print(self):
         print(self.nonce)
