@@ -43,7 +43,7 @@ class Blockchain:
 
         self.lock = threading.Lock()
         self.msg_queue = queue.Queue()
-        
+
         self.parent_node = None
         self.OG_block = None
 
@@ -73,9 +73,6 @@ class Blockchain:
         #     print(item)
         msg = Message(msg_str)
         msg.print()
-        print(binascii.unhexlify(msg_str.split("&")[1].split(":")[1]))
-        print(binascii.unhexlify(msg_str.split("&")[2]))
-        rsa.utils.signature
         #print(msg_str)
         
         return False
