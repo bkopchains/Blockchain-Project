@@ -1,6 +1,8 @@
 import queue
 import threading
 import binascii
+from cryptography.hazmat.primitives.asymmetric import rsa
+
 import logging
 import traceback, sys
 from blockchain_constants import *
@@ -16,11 +18,34 @@ class Blockchain:
         # Use this lock to protect internal data of this class from
         # the multi-threaded server.  Wrap code modifies the
         # blockchain in the context "with self.lock:".  Be careful not
-        # to nest these contexts or it will cause deadlock.
+        # to nest these contexts or it will cause deadlock.\
+
+
+        #Similar log setup from network.py
+        self.log = logging.getLogger('Mine')
+        self.log.setLevel(logging.DEBUG)
+        #file handler
+        fh = logging.FileHandler('miner.log')
+        fh.setLevel(logging.DEBUG)
+        #console handler
+        ch = logging.StreamHandler()
+        ch.setLevel(logging.WARNING)
+        #formatter
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        fh.setFormatter(formatter)
+        ch.setFormatter(formatter)
+        #add the handlers to the logger
+        self.log.addHandler(fh)
+        self.log.addHandler(ch)
+
+        self.log.warning("=========== Miner function logging started ==========")
+
         self.lock = threading.Lock()
         self.msg_queue = queue.Queue()
-        self.OG_block = None
         self.parent_node = None
+        self.OG_block = None
+
+        self.log.warning("=========== Miner init complete ==========")
 
         pass
         
@@ -45,6 +70,8 @@ class Blockchain:
         # for item in msg_str.split("&"):
         #     print(item)
         print(binascii.unhexlify(msg_str.split("&")[1].split(":")[1]))
+        print(binascii.unhexlify(msg_str.split("&")[2]))
+        rsa.utils.signature
         #print(msg_str)
         
         return False
@@ -60,7 +87,7 @@ class Blockchain:
 
     '''
     def add_block_str(self, block_str):
-        block_str
+
         return False
 
 

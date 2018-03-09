@@ -1,14 +1,53 @@
-2018-03-05 19:18:39,499 - Server - WARNING - =========== Server logging started ==========
-2018-03-05 19:18:39,622 - Server - INFO - Reading peers from peers.txt.
-2018-03-05 19:18:39,769 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
-2018-03-05 19:18:39,902 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
-2018-03-05 19:18:39,939 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
-2018-03-05 19:18:39,946 - Server - WARNING - ============ Server init complete ===========
-2018-03-05 19:18:39,964 - Server - INFO - Started up on port 50000
-2018-03-05 19:18:39,983 - Server - INFO - Thread: 2128 - Start requesting peers. 2 peers currently
-2018-03-05 19:18:40,007 - Server - WARNING - Thread: 2464 - Started updating from peers
-2018-03-05 19:18:40,187 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
-2018-03-05 19:18:40,194 - Server - WARNING - Thread: 2128 - Complete requesting peers. 2 peers currently
-2018-03-05 19:18:40,256 - Server - INFO - Thread: 2464 - Received 11 blocks from 149.106.60.81.
-2018-03-05 19:18:40,262 - Server - WARNING - Thread: 2464 - Completed updating from peers
-2018-03-05 19:18:44,843 - Server - INFO - Thread: 2128 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:33842 - Received duplicate or invalid message, ignoring
+2018-03-09 14:03:38,549 - Server - WARNING - =========== Server logging started ==========
+2018-03-09 14:03:38,634 - Server - INFO - Reading peers from peers.txt.
+2018-03-09 14:03:38,800 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-09 14:03:38,955 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-09 14:03:38,996 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 14:03:39,002 - Server - WARNING - ============ Server init complete ===========
+2018-03-09 14:03:39,008 - Server - INFO - Started up on port 50000
+2018-03-09 14:03:39,026 - Server - INFO - Thread: 4736 - Start requesting peers. 2 peers currently
+2018-03-09 14:03:39,052 - Server - WARNING - Thread: 5072 - Started updating from peers
+2018-03-09 14:03:39,185 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 14:03:39,192 - Server - WARNING - Thread: 4736 - Complete requesting peers. 2 peers currently
+2018-03-09 14:03:39,271 - Server - INFO - Thread: 5072 - Received 11 blocks from 149.106.60.81.
+2018-03-09 14:03:39,278 - Server - WARNING - Thread: 5072 - Completed updating from peers
+2018-03-09 14:04:00,374 - Server - WARNING - =========== Server logging started ==========
+2018-03-09 14:04:00,550 - Server - INFO - Reading peers from peers.txt.
+2018-03-09 14:04:00,718 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-09 14:04:00,877 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-09 14:04:00,915 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 14:04:00,921 - Server - WARNING - ============ Server init complete ===========
+2018-03-09 14:04:00,934 - Server - INFO - Started up on port 50000
+2018-03-09 14:04:00,951 - Server - INFO - Thread: 5120 - Start requesting peers. 2 peers currently
+2018-03-09 14:04:00,978 - Server - WARNING - Thread: 5456 - Started updating from peers
+2018-03-09 14:04:01,122 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 14:04:01,128 - Server - WARNING - Thread: 5120 - Complete requesting peers. 2 peers currently
+2018-03-09 14:04:01,242 - Server - INFO - Thread: 5456 - Received 11 blocks from 149.106.60.81.
+2018-03-09 14:04:01,248 - Server - WARNING - Thread: 5456 - Completed updating from peers
+2018-03-09 14:05:15,468 - Server - WARNING - =========== Server logging started ==========
+2018-03-09 14:05:15,586 - Server - INFO - Reading peers from peers.txt.
+2018-03-09 14:05:15,739 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-09 14:05:15,893 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-09 14:05:15,934 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 14:05:15,941 - Server - WARNING - ============ Server init complete ===========
+2018-03-09 14:05:15,965 - Server - INFO - Started up on port 50000
+2018-03-09 14:05:15,984 - Server - INFO - Thread: 8272 - Start requesting peers. 2 peers currently
+2018-03-09 14:05:16,016 - Server - WARNING - Thread: 8608 - Started updating from peers
+2018-03-09 14:05:16,161 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 14:05:16,167 - Server - WARNING - Thread: 8272 - Complete requesting peers. 2 peers currently
+2018-03-09 14:05:16,275 - Server - INFO - Thread: 8608 - Received 11 blocks from 149.106.60.81.
+2018-03-09 14:05:16,281 - Server - WARNING - Thread: 8608 - Completed updating from peers
+2018-03-09 14:05:23,479 - Server - INFO - Thread: 8272 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:41864 - Received duplicate or invalid message, ignoring
+2018-03-09 14:07:21,913 - Server - WARNING - =========== Server logging started ==========
+2018-03-09 14:07:22,068 - Server - INFO - Reading peers from peers.txt.
+2018-03-09 14:07:22,222 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-09 14:07:22,377 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-09 14:07:22,414 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 14:07:22,420 - Server - WARNING - ============ Server init complete ===========
+2018-03-09 14:07:22,443 - Server - INFO - Started up on port 50000
+2018-03-09 14:07:22,460 - Server - INFO - Thread: 6848 - Start requesting peers. 2 peers currently
+2018-03-09 14:07:22,490 - Server - WARNING - Thread: 7184 - Started updating from peers
+2018-03-09 14:07:22,620 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-09 14:07:22,626 - Server - WARNING - Thread: 6848 - Complete requesting peers. 2 peers currently
+2018-03-09 14:07:22,744 - Server - INFO - Thread: 7184 - Received 11 blocks from 149.106.60.81.
+2018-03-09 14:07:22,750 - Server - WARNING - Thread: 7184 - Completed updating from peers
