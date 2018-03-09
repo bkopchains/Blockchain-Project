@@ -25,19 +25,19 @@ class Message:
         print("MSG_BODY: ", self.msg_body)
         print("MSG_TIMESTAMP: ", self.timestamp)
         # print("SIGNATURE: ",self.digital_sig)
+
+
+    def verify(self):
         pubkey = serialization.load_pem_public_key(self.pub_key, backend=default_backend())
         print(pubkey.verify(
             self.digital_sig,
             self.msg_body,
             padding.PSS(
-                mgf = padding.MGF1(hashes.SHA256()),
-                salt_length = padding.PSS.MAX_LENGTH
+                mgf=padding.MGF1(hashes.SHA256()),
+                salt_length=padding.PSS.MAX_LENGTH
             ),
             hashes.SHA256()
         ))
-
-
-
 
 
 
