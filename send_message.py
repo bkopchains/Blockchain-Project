@@ -11,9 +11,7 @@ import sys, time
 def load_key(file_name, num, private):
 
     with open(file_name, "rb") as key_file:
-
         text = key_file.read()
-
         if private:
             end_delim = b"-----END PRIVATE KEY-----\n"
         else:
@@ -155,5 +153,3 @@ try:
     sock.close()
 except:
     print("Error: Failed to connect to server.")
-    
-    
