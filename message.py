@@ -9,15 +9,20 @@ import sys, time
 
 class Message:
     def __init__(self, msg_str):
+        self.illformed = True
+        self.valid = True
         self.msg_str = msg_str
-        self.pub_key = binascii.unhexlify(msg_str.split("&")[0])
-        self.type = len((msg_str.split("&")[1]).split(":"))
-        self.msg_body = msg_str.split("&")[1]
-        self.digital_sig = binascii.unhexlify(msg_str.split("&")[2])
-        self.timestamp = str(time.time()).encode()
-        self.recipient_key = None
-        if self.type == MESSAGE_PRIVATE:
-            self.recipient_key = binascii.unhexlify(msg_str.split("&")[1].split(":")[2])
+        try:
+            self.pub_key = binascii.unhexlify(msg_str.split("&")[0])
+            self.type = len((msg_str.split("&")[1]).split(":"))
+            self.msg_body = msg_str.split("&")[1]
+            self.digital_sig = binascii.unhexlify(msg_str.split("&")[2])
+            self.timestamp = str(time.time()).encode()
+            self.recipient_key = None
+            if self.type == MESSAGE_PRIVATE:
+                self.recipient_key = binascii.unhexlify(msg_str.split("&")[1].split(":")[2])
+        except:
+            self.illformed = False
 
     def print(self):
         print("MSG_TYPE: ", self.type)
@@ -44,6 +49,7 @@ class Message:
             )
             return True
         except:
+            self.valid = False
             return False
 
 
