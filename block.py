@@ -1,7 +1,10 @@
 import random, binascii
 
 class Block:
-    def __init__(self):
+    def __init__(self, block_str):
+        self.nonce = binascii.unhexlify(block_str.split("|")[0])
+        self.parent = binascii.unhexlify(block_str.split("|")[1])
+        self.timestamp=binascii.unhexlify(block_str.split("|")[2])
         self.nonce = self.generateNonce();
         self.parentNode = None;
 
