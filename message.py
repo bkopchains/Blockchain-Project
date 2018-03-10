@@ -12,7 +12,7 @@ class Message:
         self.msg_str = msg_str
         self.pub_key = binascii.unhexlify(msg_str.split("&")[0])
         self.type = len((msg_str.split("&")[1]).split(":"))
-        self.msg_body = binascii.unhexlify(msg_str.split("&")[1].split(":")[1])
+        self.msg_body = msg_str.split("&")[1]
         self.digital_sig = binascii.unhexlify(msg_str.split("&")[2])
         self.timestamp = str(time.time()).encode()
         self.recipient_key = None
@@ -28,17 +28,23 @@ class Message:
 
 
     def verify(self):
-        pubkey = serialization.load_pem_public_key(self.pub_key, backend=default_backend())
 
-        return pubkey.verify(
-            self.digital_sig,
-            self.msg_body,
-            padding.PSS(
-                mgf=padding.MGF1(hashes.SHA256()),
-                salt_length=padding.PSS.MAX_LENGTH
-            ),
-            hashes.SHA256()
-        )
+        backend = default_backend()
+        pubkey = serialization.load_pem_public_key(self.pub_key, backend)
+
+        try:
+            pubkey.verify(
+                self.digital_sig,
+                self.msg_body.encode(),
+                padding.PSS(
+                    mgf=padding.MGF1(hashes.SHA256()),
+                    salt_length=padding.PSS.MAX_LENGTH
+                ),
+                hashes.SHA256()
+            )
+            return True
+        except:
+            return False
 
 
 
