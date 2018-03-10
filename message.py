@@ -17,7 +17,7 @@ class Message:
             self.type = len((msg_str.split("&")[1]).split(":"))
             self.msg_body = msg_str.split("&")[1]
             self.digital_sig = binascii.unhexlify(msg_str.split("&")[2])
-            self.timestamp = str(time.time()).encode()
+        self.timestamp = self.msg_body.split(":")[0]
             self.recipient_key = None
             if self.type == MESSAGE_PRIVATE:
                 self.recipient_key = binascii.unhexlify(msg_str.split("&")[1].split(":")[2])
