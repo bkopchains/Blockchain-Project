@@ -103,7 +103,11 @@ class Blockchain:
 
     '''
     def add_block_str(self, block_str):
-        print("add_block_str(%s)" % block_str)
+        blk = Block(block_str)
+        if blk.verify():
+            return True, "True"
+        else:
+            return False, "False"
         return False
 
 
