@@ -104,6 +104,12 @@ class Blockchain:
     '''
     def add_block_str(self, block_str):
         print("add_block_str(%s)" % block_str)
+        tempblock = Block(block_str=block_str)
+        f = open("ledger.txt", 'a')
+        if tempblock.verify():
+            f.write(block_str + "\n")
+            self.parent_node = tempblock
+            return True
         return False
 
 
@@ -147,5 +153,5 @@ class Blockchain:
                 bstr = ""
                 for i in range(0, self.get_message_queue_size()):
                     bstr += (self.msg_queue.get_nowait().msg_body + "|")
-                self.minedBlock = Block(msgs_str=bstr)
+                self.minedBlock = Block(msgs_str=bstr, parent=self.parent_node.parent)
             pass
