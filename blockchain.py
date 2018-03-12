@@ -101,6 +101,7 @@ class Blockchain:
 
     '''
     def add_block_str(self, block_str):
+        print("add_block_str(%s)" % block_str)
         return False
 
 
@@ -111,7 +112,7 @@ class Blockchain:
 
     '''
     def get_new_block_str(self):
-
+        print("get_new_block_str()")
         return None
 
 
@@ -140,9 +141,9 @@ class Blockchain:
     def mine(self):
 
         while True:
-            if self.get_message_queue_size() == 2:
+            if self.get_message_queue_size() == MSGS_PER_BLOCK:
                 bstr = ""
                 for i in range(0, self.get_message_queue_size()):
                     bstr += (self.msg_queue.get_nowait().msg_body + "|")
-                print(bstr[:-1])
+                bstr = bstr[:-1]
             pass
