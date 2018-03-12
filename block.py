@@ -12,9 +12,11 @@ class Block:
             self.timestamp = block_str.split("|")[3]
             self.msgs = "|".join(block_str.split("|")[4:])
         elif block_str is None and msgs_str is not None and parent is not None:
-            self.nonce = self.generateNonce();
+            self.miner_ID = None
             self.parent = parent
+            self.valid = False
         else:
+            self.illformed = True
             self.valid = False
 
 
@@ -22,13 +24,13 @@ class Block:
     def generateNonce(self):
         return binascii.hexlify(str(random.getrandbits(64)).encode())
 
-    def print(self):
-        if self.valid is False:
-            print("====== INVALID BLOCK ======")
-        else:
-            print(self.nonce)
+    # def print(self):
+    #     if self.illformed is False:
+    #         print("====== ILLFORMED BLOCK ======")
+    #     else:
+    #         print(self.nonce)
     
-    #returns True if hash is verified to be true, false otherwise
+    # returns True if hash is verified to be true, false otherwise
     def verify(self):
         parentSplit = self.parent.split()
         zeroCount = 0
@@ -39,7 +41,7 @@ class Block:
             return True
         else:
             return False
-#
+
 # testblock = Block()
 # testblock.generateNonce()
 # testblock.print()
