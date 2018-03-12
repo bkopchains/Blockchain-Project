@@ -25,11 +25,12 @@ class Message:
             self.illformed = False
 
     def print(self):
-        print("MSG_TYPE: ", self.type)
-        print(self.pub_key)
-        print("MSG_BODY: ", self.msg_body)
-        print("MSG_TIMESTAMP: ", self.timestamp)
-        print("SIGNATURE: ",self.digital_sig)
+        return self.msg_str
+        # print("MSG_TYPE: ", self.type)
+        # print(self.pub_key)
+        # print("MSG_BODY: ", self.msg_body)
+        # print("MSG_TIMESTAMP: ", self.timestamp)
+        # print("SIGNATURE: ",self.digital_sig)
 
 
     def verify(self):
