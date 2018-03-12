@@ -148,10 +148,18 @@ class Blockchain:
     '''
     def mine(self):
 
+        self.log.warning("=========== Miner Initialized ==========")
+
         while True:
-            if self.get_message_queue_size() == MSGS_PER_BLOCK:
-                bstr = ""
-                for i in range(0, self.get_message_queue_size()):
-                    bstr += (self.msg_queue.get_nowait().msg_body + "|")
-                self.minedBlock = Block(msgs_str=bstr, parent=self.parent_node.parent)
-            pass
+            msgs_toadd = []
+            self.log.warning("=========== [Miner waiting for msgs] ==========")
+            while MSGS_PER_BLOCK > msgs_toadd:
+                msgs_toadd.append(self.msg_queue.get())
+            self.log.warning("=========== [Mining function started] ==========")
+
+            # if self.get_message_queue_size() == MSGS_PER_BLOCK:
+            #     bstr = ""
+            #     for i in range(0, self.get_message_queue_size()):
+            #         bstr += (self.msg_queue.get_nowait().msg_body + "|")
+            #     self.minedBlock = Block(msgs_str=bstr, parent=self.parent_node.parent)
+            # pass

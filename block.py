@@ -14,23 +14,25 @@ class Block:
             self.msgs = "|".join(block_str.split("|")[4:])
         # given a list of messages and a parent block
         elif block_str is None and msgs_str is not None and parent is not None:
-            self.nonce = self.generateNonce();
+            self.miner_ID = None
             self.parent = parent
+            self.valid = False
         # given nothing or some other combination
         else:
+            self.illformed = True
             self.valid = False
 
     # returns a hexlified random 64 bit nonce
     def generateNonce(self):
         return binascii.hexlify(str(random.getrandbits(64)).encode())
 
-    def print(self):
-        if self.valid is False:
-            print("====== INVALID BLOCK ======")
-        else:
-            print(self.nonce)
+    # def print(self):
+    #     if self.illformed is False:
+    #         print("====== ILLFORMED BLOCK ======")
+    #     else:
+    #         print(self.nonce)
     
-    #returns True if hash is verified to be true, false otherwise
+    # returns True if hash is verified to be true, false otherwise
     def verify(self):
         zeroCount = 0
         for letter in self.parent[:5]:
@@ -41,6 +43,11 @@ class Block:
         else:
             return False
 
+    def tryMine(self, parent, minerID, msgs, blockchain):
+
+        mined = Block()
+
+        return mined
 # testblock = Block()
 # testblock.generateNonce()
 # testblock.print()
