@@ -1,20 +1,32 @@
 import random, binascii
-import blockchain_constants
+from blockchain_constants import *
 
 class Block:
-    def __init__(self, block_str):
-        self.nonce = binascii.unhexlify(block_str.split("|")[0])
-        self.parent = binascii.unhexlify(block_str.split("|")[1])
-        self.timestamp=binascii.unhexlify(block_str.split("|")[2])
-        self.nonce = self.generateNonce();
-        self.parentNode = None;
+
+    #multiple methods of constructing the block object based on what is given
+    def __init__(self, block_str = None, msgs_str = None, parent = None):
+        if block_str is not None and msgs_str is None:
+            self.nonce = block_str.split("|")[0]
+            self.parent = block_str.split("|")[1]
+            self.miner_ID = block_str.split("|")[2]
+            self.timestamp = block_str.split("|")[3]
+            self.msgs = "|".join(block_str.split("|")[4:])
+        elif block_str is None and msgs_str is not None and parent is not None:
+            self.nonce = self.generateNonce();
+            self.parent = parent
+        else:
+            self.valid = False
+
 
     # returns a hexlified random 64 bit nonce
     def generateNonce(self):
         return binascii.hexlify(str(random.getrandbits(64)).encode())
 
     def print(self):
-        print(self.nonce)
+        if self.valid is False:
+            print("====== INVALID BLOCK ======")
+        else:
+            print(self.nonce)
     
     #returns True if hash is verified to be true, false otherwise
     def verify(self):
@@ -23,11 +35,11 @@ class Block:
         for letter in parentSplit:
             if letter == "0":
                 zeroCount+=1
-        if zeroCount >= blockchain_constants.PROOF_OF_WORK_HARDNESS:
+        if zeroCount >= PROOF_OF_WORK_HARDNESS:
             return True
         else:
             return False
-
-testblock = Block()
-testblock.generateNonce()
-testblock.print()
+#
+# testblock = Block()
+# testblock.generateNonce()
+# testblock.print()

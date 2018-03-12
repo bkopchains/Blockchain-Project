@@ -2,3 +2,7 @@
 \.idea/
 
 __pycache__/
+
+miner\.log
+
+server\.log
