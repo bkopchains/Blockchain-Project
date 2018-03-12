@@ -1,4 +1,5 @@
 import random, binascii
+import blockchain_constants
 
 class Block:
     def __init__(self, block_str):
@@ -22,7 +23,7 @@ class Block:
         for letter in parentSplit:
             if letter == "0":
                 zeroCount+=1
-        if zeroCount >= 5:
+        if zeroCount >= blockchain_constants.PROOF_OF_WORK_HARDNESS:
             return True
         else:
             return False
@@ -30,4 +31,3 @@ class Block:
 testblock = Block()
 testblock.generateNonce()
 testblock.print()
-
