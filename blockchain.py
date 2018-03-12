@@ -21,6 +21,7 @@ class Blockchain:
         # blockchain in the context "with self.lock:".  Be careful not
         # to nest these contexts or it will cause deadlock.\
 
+        self.msglist = []
 
         #Similar log setup from network.py
         self.log = logging.getLogger('Mine')
@@ -72,9 +73,20 @@ class Blockchain:
         # for item in msg_str.split("&"):
         #     print(item)
         msg = Message(msg_str)
-        msg.print()
-        print("verified: ", msg.verify())
-        #print(msg_str)
+        if not msg.illformed:
+            if msg.verify():
+                self.log.warning("=========== Message correctly formed and verified ==========")
+            else:
+                self.log.warning("=========== Message invalid - not verified ==========")
+        else:
+            self.log.warning("=========== Message ill-formed ==========")
+
+        if msg not in self.msglist:
+            self.log.warning("=========== Message not duplicate ==========")
+            self.msglist.append(msg)
+            self.msg_queue.put_nowait(msg)
+        else:
+            self.log.warning("=========== Message already in queue ==========")
         
         return False
 
@@ -89,7 +101,6 @@ class Blockchain:
 
     '''
     def add_block_str(self, block_str):
-
         return False
 
 
@@ -129,4 +140,9 @@ class Blockchain:
     def mine(self):
 
         while True:
+            if self.get_message_queue_size() == 2:
+                bstr = ""
+                for i in range(0, self.get_message_queue_size()):
+                    bstr += (self.msg_queue.get_nowait().msg_body + "|")
+                print(bstr[:-1])
             pass

@@ -9,7 +9,7 @@ import sys, time
 
 class Message:
     def __init__(self, msg_str):
-        self.illformed = True
+        self.illformed = False
         self.valid = True
         self.msg_str = msg_str
         try:
@@ -22,7 +22,7 @@ class Message:
             if self.type == MESSAGE_PRIVATE:
                 self.recipient_key = binascii.unhexlify(msg_str.split("&")[1].split(":")[2])
         except:
-            self.illformed = False
+            self.illformed = True
 
     def print(self):
         return self.msg_str
