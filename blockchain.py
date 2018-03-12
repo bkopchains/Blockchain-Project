@@ -2,6 +2,7 @@ import queue
 import threading
 import binascii
 from message import *
+from block import *
 from cryptography.hazmat.primitives.asymmetric import rsa
 
 import logging
@@ -47,6 +48,7 @@ class Blockchain:
 
         self.parent_node = None
         self.OG_block = None
+        self.minedBlock = None
 
         self.log.warning("=========== Miner init complete ==========")
 
@@ -112,7 +114,7 @@ class Blockchain:
 
     '''
     def get_new_block_str(self):
-        print("get_new_block_str()")
+        #print("get_new_block_str()")
         return None
 
 
@@ -145,5 +147,5 @@ class Blockchain:
                 bstr = ""
                 for i in range(0, self.get_message_queue_size()):
                     bstr += (self.msg_queue.get_nowait().msg_body + "|")
-                bstr = bstr[:-1]
+                self.minedBlock = Block(msgs_str=bstr)
             pass
