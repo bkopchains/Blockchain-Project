@@ -17,7 +17,15 @@ class Block:
     
     #returns True if hash is verified to be true, false otherwise
     def verify(self):
-        return
+        parentSplit = self.parent.split()
+        zeroCount = 0
+        for letter in parentSplit:
+            if letter == "0":
+                zeroCount+=1
+        if zeroCount >= 5:
+            return True
+        else:
+            return False
 
 testblock = Block()
 testblock.generateNonce()
