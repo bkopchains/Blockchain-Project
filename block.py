@@ -34,7 +34,7 @@ class Block:
     # returns True if hash is verified to be true, false otherwise
     def verify(self, parent):
         zeroCount = 0
-        for letter in parentSplit:
+        for letter in parent:
             if letter == "0":
                 zeroCount += 1
         if zeroCount >= PROOF_OF_WORK_HARDNESS and parent.timestamp < self.timestamp:
