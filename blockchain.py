@@ -51,6 +51,7 @@ class Blockchain:
         self.parent_node = None
         self.OG_block = None
         self.blocksMined = queue.Queue()
+        self.allBlocks = []
 
         self.log.warning("=========== Miner init complete ==========")
 
@@ -123,10 +124,7 @@ class Blockchain:
     '''
     def get_new_block_str(self):
         #print("get_new_block_str()")
-        if self.blocksMined.qsize == 0:
-            return False
-        else:
-            return self.blocksMined
+        return self.blocksMined.get_nowait().encoded.decode()
 
 
     '''Returns a list of the string encoding of each of the blocks in this
@@ -137,13 +135,14 @@ class Blockchain:
     '''
     def get_all_block_strs(self, t):
         blockCount = 0
-        allBlocks = []
-        for i in range(self.blocksMined.qsize()):
+        toReturn = []
+        for i in range(len(self.allBlocks)):
             blockCount+=1
-            allBlocks.append(self.blocksMined.get_nowait())
-        for x in range(blockCount):
-            allBlocks[x] = allBlocks[x].encoded.decode()
-        return allBlocks
+            toReturn.append(self.allBlocks[i])
+        for x in range(len(blockCount)):
+            toReturn[x] = toReturn[x].encoded.decode()
+        print("Total " + blockCount + " blocks ready to broadcast")
+        return toReturn
 
 
     '''Waits for enough messages to be received from the server, forms
