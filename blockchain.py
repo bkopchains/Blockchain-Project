@@ -63,7 +63,8 @@ class Blockchain:
         self.allBlocks = []
 
         self.log.warning("=========== Miner init complete ==========")
-
+        self.readable_messages = 0
+        self.longest_chain = 0
         pass
         
     '''Returns the number of messages that are queued to be processed by
@@ -177,6 +178,7 @@ class Blockchain:
     blockchain_bbs.py as a new thread.
 
     '''
+
     def mine(self):
 
         self.log.warning("=========== Miner Initialized ==========")
@@ -204,3 +206,9 @@ class Blockchain:
             #         bstr += (self.msg_queue.get_nowait().msg_body + "|")
             #     self.minedBlock = Block(msgs_str=bstr, parent=self.parent_node.parent)
             # pass
+    def writeToStats(self):
+        f = open("messages.txt", "r")
+        fh = f.read()
+        readable_msgs = len(fh.split('\n'))
+        print ("Number of readable messages", readable_msgs)
+        print ("Longest chain length", readable_msgs/10)
