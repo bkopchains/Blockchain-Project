@@ -34,12 +34,12 @@ class Block:
     #         print(self.nonce)
     
     # returns True if hash is verified to be true, false otherwise
-    def verify(self):
+    def verify(self, parent):
         zeroCount = 0
         for letter in self.parent[:5]:
             if letter == "0":
                 zeroCount += 1
-        if zeroCount >= PROOF_OF_WORK_HARDNESS:
+        if zeroCount >= PROOF_OF_WORK_HARDNESS and parent.timestamp < self.timestamp:
             print("BLOCK ", self.timestamp, "VERIFIED")
             return True
         else:

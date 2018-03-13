@@ -108,7 +108,7 @@ class Blockchain:
         print("add_block_str(%s)" % block_str)
         tempblock = Block(block_str=block_str)
         f = open("ledger.txt", 'a')
-        if tempblock.verify():
+        if tempblock.verify(parent=self.parent_node) and tempblock.timestamp < self.parent_node.timestamp:
             f.write(block_str + "\n")
             self.parent_node = tempblock
             return True
@@ -168,7 +168,7 @@ class Blockchain:
                 msgs_toadd.append(self.msg_queue.get().msg_str)
             self.log.warning("=========== [Mining function started] ==========")
 
-            if self.parent_node is None:
+            if self.OG_block is None:
                 tempBlock = Block.tryMine(b'000000000000000000000000000000000000', self.minerID, msgs_toadd)
             else:
                 tempBlock = Block.tryMine(self.parent_node.parent.encode(), self.minerID, msgs_toadd)
