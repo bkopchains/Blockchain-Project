@@ -845,3 +845,27 @@ binascii.Error: Non-hexadecimal digit found
 2018-03-12 21:02:59,404 - Server - INFO - Thread: 3888 - Received 11 blocks from 149.106.60.81.
 2018-03-12 21:02:59,404 - Server - WARNING - Thread: 3888 - Completed updating from peers
 2018-03-12 21:03:08,480 - Server - INFO - Thread: 3552 - Command: MESSAGE_BROADCAST - From: 127.0.0.1:56811 - Received duplicate or invalid message, ignoring
+2018-03-12 21:33:08,788 - Server - INFO - Thread: 3552 - Command: MESSAGE_BROADCAST - From: 127.0.0.1:59256 - Received duplicate or invalid message, ignoring
+2018-03-12 21:33:43,431 - Server - WARNING - =========== Server logging started ==========
+2018-03-12 21:33:43,434 - Server - INFO - Reading peers from peers.txt.
+2018-03-12 21:33:43,546 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-12 21:33:43,654 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-12 21:33:43,656 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-12 21:33:43,656 - Server - WARNING - ============ Server init complete ===========
+2018-03-12 21:33:43,657 - Server - INFO - Started up on port 50000
+2018-03-12 21:33:43,658 - Server - INFO - Thread: 4272 - Start requesting peers. 2 peers currently
+2018-03-12 21:33:43,660 - Server - WARNING - Thread: 4608 - Started updating from peers
+2018-03-12 21:33:43,769 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-12 21:33:43,769 - Server - WARNING - Thread: 4272 - Complete requesting peers. 2 peers currently
+2018-03-12 21:33:43,777 - Server - INFO - Thread: 4608 - Received 11 blocks from 149.106.60.81.
+2018-03-12 21:33:43,777 - Server - WARNING - Thread: 4608 - Completed updating from peers
+2018-03-12 21:34:09,516 - Server - INFO - Thread: 4272 - Command: MESSAGE_BROADCAST - From: 127.0.0.1:59362 - Received duplicate or invalid message, ignoring
+2018-03-12 21:34:13,064 - Server - INFO - Thread: 4272 - Command: MESSAGE_BROADCAST - From: 127.0.0.1:59368 - Received duplicate or invalid message, ignoring
+2018-03-12 21:34:16,115 - Server - INFO - Thread: 4272 - Command: MESSAGE_BROADCAST - From: 127.0.0.1:59370 - Received duplicate or invalid message, ignoring
+2018-03-12 21:34:19,464 - Server - INFO - Thread: 4272 - Command: MESSAGE_BROADCAST - From: 127.0.0.1:59372 - Received duplicate or invalid message, ignoring
+2018-03-12 21:34:22,305 - Server - INFO - Thread: 4272 - Command: MESSAGE_BROADCAST - From: 127.0.0.1:59374 - Received duplicate or invalid message, ignoring
+2018-03-12 21:34:25,371 - Server - INFO - Thread: 4272 - Command: MESSAGE_BROADCAST - From: 127.0.0.1:59376 - Received duplicate or invalid message, ignoring
+2018-03-12 21:34:27,181 - Server - INFO - Thread: 4272 - Command: MESSAGE_BROADCAST - From: 127.0.0.1:59378 - Received duplicate or invalid message, ignoring
+2018-03-12 21:34:28,634 - Server - INFO - Thread: 4272 - Command: MESSAGE_BROADCAST - From: 127.0.0.1:59421 - Received duplicate or invalid message, ignoring
+2018-03-12 21:34:29,819 - Server - INFO - Thread: 4272 - Command: MESSAGE_BROADCAST - From: 127.0.0.1:59430 - Received duplicate or invalid message, ignoring
+2018-03-12 21:34:31,605 - Server - INFO - Thread: 4272 - Command: MESSAGE_BROADCAST - From: 127.0.0.1:59432 - Received duplicate or invalid message, ignoring

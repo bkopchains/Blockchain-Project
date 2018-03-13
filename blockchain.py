@@ -165,7 +165,7 @@ class Blockchain:
         while True:
             msgs_toadd = []
             self.log.warning("=========== [Miner waiting for msgs] ==========")
-            while 1 > len(msgs_toadd):
+            while MSGS_PER_BLOCK > len(msgs_toadd):
                 msgs_toadd.append(self.msg_queue.get().msg_str)
             self.log.warning("=========== [Mining function started] ==========")
 
@@ -173,7 +173,6 @@ class Blockchain:
                 tempBlock = Block.tryMine(b'000000000000000000000000000000000000', self.minerID, msgs_toadd)
             else:
                 tempBlock = Block.tryMine(self.parent_node.parent.encode(), self.minerID, msgs_toadd)
-            
             # if self.get_message_queue_size() == MSGS_PER_BLOCK:
             #     bstr = ""
             #     for i in range(0, self.get_message_queue_size()):
