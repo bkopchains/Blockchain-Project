@@ -126,7 +126,7 @@ class Blockchain:
                 self.OG_block = tempblock
                 self.parent_node = tempblock
                 return True
-            elif (tempblock.verify(parent=self.parent_node) and tempblock.timestamp > self.parent_node.timestamp):
+            elif (tempblock.verify() and tempblock.timestamp > self.parent_node.timestamp):
                 f.write(block_str + "\n")
                 f.close()
                 self.parent_node = tempblock
@@ -143,7 +143,7 @@ class Blockchain:
     def get_new_block_str(self):
         #print("get_new_block_str()")
         if self.blocksMined.qsize() != 0:
-            return self.blocksMined.get_nowait().encoded.decode()
+            return self.blocksMined.get_nowait().print()
         else:
             return None
 

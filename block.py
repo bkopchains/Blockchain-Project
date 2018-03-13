@@ -8,11 +8,13 @@ class Block:
     #multiple methods of constructing the block object based on what is given
     def __init__(self, block_str = None, msgs_str = None, parent = None):
         if block_str is not None and msgs_str is None:
+            self.block_str = block_str
             self.nonce = block_str.split("|")[0]
             self.parent = block_str.split("|")[1]
             self.miner_ID = block_str.split("|")[2]
             self.timestamp = block_str.split("|")[3]
             self.msgs = "|".join(block_str.split("|")[4:])
+            self.illformed = False
         elif block_str is None and msgs_str is not None and parent is not None:
             self.parent = parent
             self.valid = False
@@ -25,19 +27,20 @@ class Block:
     def generateNonce(self):
         return binascii.hexlify(str(random.getrandbits(64)).encode())
 
-    # def print(self):
-    #     if self.illformed is False:
-    #         print("====== ILLFORMED BLOCK ======")
-    #     else:
-    #         print(self.nonce)
+    def print(self):
+        if self.illformed and not self.valid:
+            print("====== CANNOT RETURN ILLFORMED BLOCK ======")
+            return None
+        else:
+            return self.block_str
     
     # returns True if hash is verified to be true, false otherwise
-    def verify(self, parent):
+    def verify(self):
         zeroCount = 0
-        for letter in parent.parent:
+        for letter in self.parent:
             if letter == "0":
                 zeroCount += 1
-        if zeroCount >= PROOF_OF_WORK_HARDNESS and parent.timestamp < self.timestamp:
+        if zeroCount >= PROOF_OF_WORK_HARDNESS:
             print("BLOCK VERIFIED")
             return True
         else:
@@ -49,6 +52,7 @@ class Block:
         mined = Block(msgs_str=msgs,parent=parent)
         mined.miner_ID = minerID
         mined.timestamp = str(time.time())
+        mined.illformed = False
         msgs_enc = b''
         for msg in msgs:
             msgs_enc += b'|' + msg.encode()
@@ -59,6 +63,7 @@ class Block:
             tryblock = mined.nonce + b'|' + bwn_enc
             mined.parent = hashlib.sha512(tryblock).hexdigest()
             mined.valid = mined.verify()
+            mined.block_str = str(tryblock)
         return mined
 # testblock = Block()
 # testblock.generateNonce()
