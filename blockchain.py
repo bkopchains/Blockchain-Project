@@ -121,7 +121,11 @@ class Blockchain:
     '''
     def get_new_block_str(self):
         #print("get_new_block_str()")
-        return None
+        blockString = ""
+        if len(self.blocksMined) == 0:
+            return False
+        else:
+            return blockString
 
 
     '''Returns a list of the string encoding of each of the blocks in this
@@ -131,8 +135,14 @@ class Blockchain:
 
     '''
     def get_all_block_strs(self, t):
-
-        return []
+        blockCount = 0
+        allBlocks = []
+        for block in self.blocksMined:
+            blockCount+=1
+            allBlocks.append(block)
+        for x in range(blockCount):
+            allBlocks[x] = allBlocks[x].encoded.decode()
+        return allBlocks
 
 
     '''Waits for enough messages to be received from the server, forms
