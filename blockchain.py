@@ -124,7 +124,10 @@ class Blockchain:
     '''
     def get_new_block_str(self):
         #print("get_new_block_str()")
-        return self.blocksMined.get_nowait().encoded.decode()
+        if self.blocksMined.qsize() > 0:
+            return self.blocksMined.get_nowait().encoded.decode()
+        else:
+            return None
 
 
     '''Returns a list of the string encoding of each of the blocks in this
