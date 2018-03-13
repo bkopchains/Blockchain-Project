@@ -124,7 +124,10 @@ class Blockchain:
     '''
     def get_new_block_str(self):
         #print("get_new_block_str()")
-        return self.blocksMined.get_nowait().encoded.decode()
+        if self.blocksMined.qsize() != 0:
+            return self.blocksMined.get_nowait().encoded.decode()
+        else:
+            return None
 
 
     '''Returns a list of the string encoding of each of the blocks in this
@@ -169,9 +172,11 @@ class Blockchain:
 
             if self.OG_block is None:
                 tempBlock = Block.tryMine(b'000000000000000000000000000000000000', self.minerID, msgs_toadd)
+                self.blocksMined.put(tempBlock)
                 self.allBlocks.append(tempBlock)
             else:
                 tempBlock = Block.tryMine(self.parent_node.parent.encode(), self.minerID, msgs_toadd)
+                self.blocksMined.put(tempBlock)
                 self.allBlocks.append(tempBlock)
             # if self.get_message_queue_size() == MSGS_PER_BLOCK:
             #     bstr = ""
