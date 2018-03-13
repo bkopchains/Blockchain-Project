@@ -184,6 +184,7 @@ class Blockchain:
         self.log.warning("=========== Miner Initialized ==========")
 
         while True:
+            self.writeToStats()
             msgs_toadd = []
             self.log.warning("=========== [Miner waiting for msgs] ==========")
             while MSGS_PER_BLOCK > len(msgs_toadd):
@@ -206,9 +207,15 @@ class Blockchain:
             #         bstr += (self.msg_queue.get_nowait().msg_body + "|")
             #     self.minedBlock = Block(msgs_str=bstr, parent=self.parent_node.parent)
             # pass
+    # Writes 4 lines to the stats file
+
     def writeToStats(self):
         f = open("messages.txt", "r")
+        f2 = open("stats.txt", "w")
         fh = f.read()
         readable_msgs = len(fh.split('\n'))
-        print ("Number of readable messages", readable_msgs)
-        print ("Longest chain length", readable_msgs/10)
+        f2.write("Number of readable messages" + str(readable_msgs) + '\n')
+        f2.write("Longest chain length" + str(round(readable_msgs/10)))
+
+    def writeToMessages(self):
+        return
