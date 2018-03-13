@@ -48,7 +48,7 @@ class Blockchain:
 
         self.parent_node = None
         self.OG_block = None
-        self.minedBlock = None
+        self.blocksMined = None
 
         self.log.warning("=========== Miner init complete ==========")
 
