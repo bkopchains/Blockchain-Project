@@ -169,8 +169,10 @@ class Blockchain:
 
             if self.OG_block is None:
                 tempBlock = Block.tryMine(b'000000000000000000000000000000000000', self.minerID, msgs_toadd)
+                self.allBlocks.append(tempBlock)
             else:
                 tempBlock = Block.tryMine(self.parent_node.parent.encode(), self.minerID, msgs_toadd)
+                self.allBlocks.append(tempBlock)
             # if self.get_message_queue_size() == MSGS_PER_BLOCK:
             #     bstr = ""
             #     for i in range(0, self.get_message_queue_size()):
