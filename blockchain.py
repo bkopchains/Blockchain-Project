@@ -47,6 +47,7 @@ class Blockchain:
 
         self.lock = threading.Lock()
         self.msg_queue = queue.Queue()
+        self.lockThread = threading.Lock()
 
         self.parent_node = None
         self.OG_block = None
@@ -109,10 +110,11 @@ class Blockchain:
         print("add_block_str(%s)" % block_str)
         tempblock = Block(block_str=block_str)
         f = open("ledger.txt", 'a')
-        if tempblock.verify(parent=self.parent_node) and tempblock.timestamp < self.parent_node.timestamp:
-            f.write(block_str + "\n")
-            self.parent_node = tempblock
-            return True
+        with self.lockThread:
+            if tempblock.verify(parent=self.parent_node) and tempblock.timestamp < self.parent_node.timestamp:
+                f.write(block_str + "\n")
+                self.parent_node = tempblock
+                return True
         return False
 
 
@@ -124,7 +126,7 @@ class Blockchain:
     '''
     def get_new_block_str(self):
         #print("get_new_block_str()")
-        if self.blocksMined.qsize() > 0:
+        if self.blocksMined.qsize() != 0:
             return self.blocksMined.get_nowait().encoded.decode()
         else:
             return None
@@ -172,8 +174,14 @@ class Blockchain:
 
             if self.OG_block is None:
                 tempBlock = Block.tryMine(b'000000000000000000000000000000000000', self.minerID, msgs_toadd)
+                print("Gensis block mined!")
+                self.blocksMined.put(tempBlock)
+                self.allBlocks.append(tempBlock)
             else:
                 tempBlock = Block.tryMine(self.parent_node.parent.encode(), self.minerID, msgs_toadd)
+                print("New block additional block mined!")
+                self.blocksMined.put(tempBlock)
+                self.allBlocks.append(tempBlock)
             # if self.get_message_queue_size() == MSGS_PER_BLOCK:
             #     bstr = ""
             #     for i in range(0, self.get_message_queue_size()):
