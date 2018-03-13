@@ -111,7 +111,7 @@ class Blockchain:
         tempblock = Block(block_str=block_str)
         f = open("ledger.txt", 'a')
         with self.lockThread:
-            if tempblock.verify(parent=self.parent_node) and tempblock.timestamp < self.parent_node.timestamp:
+            if (self.parent_node is None) or (tempblock.verify(parent=self.parent_node) and tempblock.timestamp > self.parent_node.timestamp):
                 f.write(block_str + "\n")
                 self.parent_node = tempblock
                 return True

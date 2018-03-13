@@ -34,13 +34,14 @@ class Block:
     # returns True if hash is verified to be true, false otherwise
     def verify(self, parent):
         zeroCount = 0
-        for letter in parent:
+        for letter in parent.parent:
             if letter == "0":
                 zeroCount += 1
         if zeroCount >= PROOF_OF_WORK_HARDNESS and parent.timestamp < self.timestamp:
-            print("BLOCK ", self.timestamp, "VERIFIED")
+            print("BLOCK VERIFIED")
             return True
         else:
+            print("BLOCK NOT VERIFIED")
             return False
 
     def tryMine(parent, minerID, msgs):
