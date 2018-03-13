@@ -140,7 +140,7 @@ class Blockchain:
             blockCount+=1
             toReturn.append(self.allBlocks[i])
         for x in range(len(blockCount)):
-            toReturn[i] = toReturn[i].encoded.decode()
+            toReturn[x] = toReturn[x].encoded.decode()
         print("Total " + blockCount + " blocks ready to broadcast")
         return toReturn
 
