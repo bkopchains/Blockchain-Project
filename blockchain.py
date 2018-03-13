@@ -16,12 +16,14 @@ class Blockchain:
     This object is created by blockchain_bbs.py.
 
     '''
-    def __init__(self):
+    def __init__(self, keyfile):
         # Use this lock to protect internal data of this class from
         # the multi-threaded server.  Wrap code modifies the
         # blockchain in the context "with self.lock:".  Be careful not
         # to nest these contexts or it will cause deadlock.\
-
+        kf = open(keyfile,"r")
+        self.pub_key = kf.read().replace("\n","").encode()
+        self.minerID = hashlib.sha256(self.pub_key).hexdigest()
         self.msglist = []
 
         #Similar log setup from network.py
@@ -48,7 +50,7 @@ class Blockchain:
 
         self.parent_node = None
         self.OG_block = None
-        self.minedBlock = None
+        self.blocksMined = None
 
         self.log.warning("=========== Miner init complete ==========")
 
@@ -71,10 +73,10 @@ class Blockchain:
 
     '''
     def add_message_str(self, msg_str):
-
         # for item in msg_str.split("&"):
         #     print(item)
         msg = Message(msg_str)
+        print(binascii.unhexlify(msg.msg_body.split(":")[1]))
         if not msg.illformed:
             if msg.verify():
                 self.log.warning("=========== Message correctly formed and verified ==========")
@@ -121,7 +123,11 @@ class Blockchain:
     '''
     def get_new_block_str(self):
         #print("get_new_block_str()")
-        return None
+        blockString = ""
+        if len(self.blocksMined) == 0:
+            return False
+        else:
+            return blockString
 
 
     '''Returns a list of the string encoding of each of the blocks in this
@@ -131,8 +137,14 @@ class Blockchain:
 
     '''
     def get_all_block_strs(self, t):
-
-        return []
+        blockCount = 0
+        allBlocks = []
+        for block in self.blocksMined:
+            blockCount+=1
+            allBlocks.append(block)
+        for x in range(blockCount):
+            allBlocks[x] = allBlocks[x].encoded.decode()
+        return allBlocks
 
 
     '''Waits for enough messages to be received from the server, forms
@@ -153,10 +165,14 @@ class Blockchain:
         while True:
             msgs_toadd = []
             self.log.warning("=========== [Miner waiting for msgs] ==========")
-            while MSGS_PER_BLOCK > msgs_toadd:
-                msgs_toadd.append(self.msg_queue.get())
+            while MSGS_PER_BLOCK > len(msgs_toadd):
+                msgs_toadd.append(self.msg_queue.get().msg_str)
             self.log.warning("=========== [Mining function started] ==========")
 
+            if self.parent_node is None:
+                tempBlock = Block.tryMine(b'000000000000000000000000000000000000', self.minerID, msgs_toadd)
+            else:
+                tempBlock = Block.tryMine(self.parent_node.parent.encode(), self.minerID, msgs_toadd)
             # if self.get_message_queue_size() == MSGS_PER_BLOCK:
             #     bstr = ""
             #     for i in range(0, self.get_message_queue_size()):

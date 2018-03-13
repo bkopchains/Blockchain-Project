@@ -7,7 +7,7 @@ from blockchain_constants import *
 
 def main():
     
-    blockchain = Blockchain()
+    blockchain = Blockchain("public_keys.pem")
     blockchain_thread = threading.Thread(target=blockchain.mine)
     blockchain_thread.start()
     

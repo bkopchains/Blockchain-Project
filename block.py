@@ -1,5 +1,7 @@
 import random, binascii
 from blockchain_constants import *
+import time
+import hashlib
 
 class Block:
 
@@ -12,7 +14,6 @@ class Block:
             self.timestamp = block_str.split("|")[3]
             self.msgs = "|".join(block_str.split("|")[4:])
         elif block_str is None and msgs_str is not None and parent is not None:
-            self.miner_ID = None
             self.parent = parent
             self.valid = False
         else:
@@ -38,10 +39,27 @@ class Block:
             if letter == "0":
                 zeroCount+=1
         if zeroCount >= PROOF_OF_WORK_HARDNESS:
+            print("BLOCK ", self.timestamp, "VERIFIED")
             return True
         else:
             return False
 
+    def tryMine(parent, minerID, msgs):
+
+        mined = Block(msgs_str=msgs,parent=parent)
+        mined.miner_ID = minerID
+        mined.timestamp = str(time.time())
+        msgs_enc = b''
+        for msg in msgs:
+            msgs_enc += b'|' + msg.encode()
+        # (bwn_enc = block without nonce, encoded)
+        bwn_enc = mined.parent + b'|' + mined.miner_ID.encode() + b'|' + mined.timestamp.encode() + msgs_enc
+        while not mined.valid:
+            mined.nonce = mined.generateNonce()
+            tryblock = mined.nonce + b'|' + bwn_enc
+            mined.parent = hashlib.sha512(tryblock).hexdigest()
+            mined.valid = mined.verify()
+        return mined
 # testblock = Block()
 # testblock.generateNonce()
 # testblock.print()
