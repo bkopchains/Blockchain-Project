@@ -138,12 +138,13 @@ class Blockchain:
     networking.py.
 
     '''
-    def get_all_block_strs(self, t):
+    def get_all_block_strs(self, timestamp):
         blockCount = 0
         toReturn = []
         for i in range(len(self.allBlocks)):
-            blockCount+=1
-            toReturn.append(self.allBlocks[i])
+            if self.allBlocks[i].timestamp >= timestamp:
+                blockCount+=1
+                toReturn.append(self.allBlocks[i])
         for x in range(len(blockCount)):
             toReturn[x] = toReturn[x].encoded.decode()
         print("Total " + blockCount + " blocks ready to broadcast")
