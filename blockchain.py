@@ -207,15 +207,17 @@ class Blockchain:
             #         bstr += (self.msg_queue.get_nowait().msg_body + "|")
             #     self.minedBlock = Block(msgs_str=bstr, parent=self.parent_node.parent)
             # pass
+    
     # Writes 4 lines to the stats file
 
     def writeToStats(self):
-        f = open("messages.txt", "r")
+        f = open("ledger.txt", "r")
         f2 = open("stats.txt", "w")
         fh = f.read()
-        readable_msgs = len(fh.split('\n'))
-        f2.write("Number of readable messages" + str(readable_msgs) + '\n')
-        f2.write("Longest chain length" + str(round(readable_msgs/10)))
+        readable_msgs = len(fh.split('|'))/4
+        f2.write("Number of readable messages " + str(readable_msgs) + '\n')
+        f2.write("Longest chain length " + str(round(readable_msgs/10)))
+
 
     def writeToMessages(self):
         return
