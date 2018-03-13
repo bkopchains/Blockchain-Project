@@ -4,6 +4,7 @@ import binascii
 from message import *
 from block import *
 from cryptography.hazmat.primitives.asymmetric import rsa
+import os
 
 import logging
 import traceback, sys
@@ -49,8 +50,15 @@ class Blockchain:
         self.msg_queue = queue.Queue()
         self.lockThread = threading.Lock()
 
-        self.parent_node = None
-        self.OG_block = None
+        ledger = open("ledger.txt", 'r')
+        if os.stat("ledger.txt").st_size == 0:
+            self.parent_node = None
+            self.OG_block = None
+        else:
+            self.OG_block = Block(next(ledger).strip())
+            self.parent_node = Block(ledger.readlines()[-1])
+
+
         self.blocksMined = queue.Queue()
         self.allBlocks = []
 
@@ -113,11 +121,13 @@ class Blockchain:
         with self.lockThread:
             if (self.OG_block is None):
                 f.write(block_str + "\n")
+                f.close()
                 self.OG_block = tempblock
                 self.parent_node = tempblock
                 return True
             elif (tempblock.verify(parent=self.parent_node) and tempblock.timestamp > self.parent_node.timestamp):
                 f.write(block_str + "\n")
+                f.close()
                 self.parent_node = tempblock
                 return True
         return False
