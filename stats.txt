@@ -1,0 +1,2 @@
+Number of readable messages 71.75
+Longest chain length 7

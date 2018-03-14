@@ -7,6 +7,7 @@ class Block:
 
     #multiple methods of constructing the block object based on what is given
     def __init__(self, block_str = None, msgs_str = None, parent = None):
+        # setup given a full block string
         if block_str is not None and msgs_str is None:
             self.block_str = block_str
             self.nonce = block_str.split("|")[0]
@@ -15,6 +16,7 @@ class Block:
             self.timestamp = block_str.split("|")[3]
             self.msgs = "|".join(block_str.split("|")[4:])
             self.illformed = False
+        # setup given messages and a parent - needs to be mined
         elif block_str is None and msgs_str is not None and parent is not None:
             self.parent = parent
             self.valid = False
@@ -27,6 +29,7 @@ class Block:
     def generateNonce(self):
         return binascii.hexlify(str(random.getrandbits(64)).encode())
 
+    # returns the string form of the block
     def print(self):
         if self.illformed and not self.valid:
             print("====== CANNOT RETURN ILLFORMED BLOCK ======")
@@ -47,6 +50,7 @@ class Block:
             print("BLOCK NOT VERIFIED")
             return False
 
+    # returns a mined and verified block given a parent, miner ID, and messages
     def tryMine(parent, minerID, msgs):
 
         mined = Block(msgs_str=msgs,parent=parent)
@@ -65,6 +69,3 @@ class Block:
             mined.valid = mined.verify()
             mined.block_str = str(tryblock)
         return mined
-# testblock = Block()
-# testblock.generateNonce()
-# testblock.print()

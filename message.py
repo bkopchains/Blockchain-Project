@@ -12,6 +12,7 @@ class Message:
         self.illformed = False
         self.valid = True
         self.msg_str = msg_str
+        # setup message object given a full message string
         try:
             self.pub_key = binascii.unhexlify(msg_str.split("&")[0])
             self.type = len((msg_str.split("&")[1]).split(":"))
@@ -26,19 +27,13 @@ class Message:
 
     def print(self):
         return self.msg_str
-        # print("MSG_TYPE: ", self.type)
-        # print(self.pub_key)
-        # print("MSG_BODY: ", self.msg_body)
-        # print("MSG_TIMESTAMP: ", self.timestamp)
-        # print("SIGNATURE: ",self.digital_sig)
 
-
+    # verifies a message by checking its digital signature with the public key
     def verify(self):
-
         backend = default_backend()
         pubkey = serialization.load_pem_public_key(self.pub_key, backend)
-
         try:
+            # built-in verify function in public_key object
             pubkey.verify(
                 self.digital_sig,
                 self.msg_body.encode(),

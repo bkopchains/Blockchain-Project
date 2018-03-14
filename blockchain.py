@@ -50,6 +50,7 @@ class Blockchain:
         self.msg_queue = queue.Queue()
         self.lockThread = threading.Lock()
 
+        # handles filling ledger if text file is full or not
         ledger = open("ledger.txt", 'r')
         if os.stat("ledger.txt").st_size == 0:
             self.parent_node = None
@@ -58,7 +59,7 @@ class Blockchain:
             self.OG_block = Block(next(ledger).strip())
             self.parent_node = Block(ledger.readlines()[-1])
 
-
+        # queue of blocks mined by our miner
         self.blocksMined = queue.Queue()
         self.allBlocks = []
 
@@ -191,25 +192,20 @@ class Blockchain:
                 msgs_toadd.append(self.msg_queue.get().msg_str)
             self.log.warning("=========== [Mining function started] ==========")
 
+            # handles mining when there is no starting block
             if self.OG_block is None:
                 tempBlock = Block.tryMine(b'000000000000000000000000000000000000', self.minerID, msgs_toadd)
                 print("Gensis block mined!")
                 self.blocksMined.put(tempBlock)
                 self.allBlocks.append(tempBlock)
+            # handles mining when given a parent block
             else:
                 tempBlock = Block.tryMine(self.parent_node.parent.encode(), self.minerID, msgs_toadd)
                 print("New block additional block mined!")
                 self.blocksMined.put(tempBlock)
                 self.allBlocks.append(tempBlock)
-            # if self.get_message_queue_size() == MSGS_PER_BLOCK:
-            #     bstr = ""
-            #     for i in range(0, self.get_message_queue_size()):
-            #         bstr += (self.msg_queue.get_nowait().msg_body + "|")
-            #     self.minedBlock = Block(msgs_str=bstr, parent=self.parent_node.parent)
-            # pass
 
     # Writes 4 lines to the stats file
-
     def writeToStats(self):
         f = open("ledger.txt", "r")
         f2 = open("stats.txt", "w")
@@ -221,7 +217,7 @@ class Blockchain:
         f2.write("Number of blocks " + str(numBlocks) + '\n')
 
     def findLongestChain(self):
-        return 0
+        return None
     
     def writeToMessages(self):
-        return
+        return None

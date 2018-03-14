@@ -869,3 +869,748 @@ binascii.Error: Non-hexadecimal digit found
 2018-03-12 21:34:28,634 - Server - INFO - Thread: 4272 - Command: MESSAGE_BROADCAST - From: 127.0.0.1:59421 - Received duplicate or invalid message, ignoring
 2018-03-12 21:34:29,819 - Server - INFO - Thread: 4272 - Command: MESSAGE_BROADCAST - From: 127.0.0.1:59430 - Received duplicate or invalid message, ignoring
 2018-03-12 21:34:31,605 - Server - INFO - Thread: 4272 - Command: MESSAGE_BROADCAST - From: 127.0.0.1:59432 - Received duplicate or invalid message, ignoring
+2018-03-13 19:21:22,477 - Server - WARNING - =========== Server logging started ==========
+2018-03-13 19:21:22,480 - Server - INFO - Reading peers from peers.txt.
+2018-03-13 19:21:22,733 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-13 19:21:22,894 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-13 19:21:22,896 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-13 19:21:22,896 - Server - WARNING - ============ Server init complete ===========
+2018-03-13 19:21:22,896 - Server - INFO - Started up on port 50000
+2018-03-13 19:21:22,896 - Server - INFO - Thread: 4880 - Start requesting peers. 2 peers currently
+2018-03-13 19:21:22,897 - Server - WARNING - Thread: 5216 - Started updating from peers
+2018-03-13 19:21:23,068 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-13 19:21:23,069 - Server - WARNING - Thread: 4880 - Complete requesting peers. 2 peers currently
+2018-03-13 19:21:23,140 - Server - INFO - Thread: 5216 - Received 11 blocks from 149.106.60.81.
+2018-03-13 19:21:23,141 - Server - WARNING - Thread: 5216 - Completed updating from peers
+2018-03-13 19:21:34,345 - Server - INFO - Thread: 4880 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:44254 - Received duplicate or invalid message, ignoring
+2018-03-13 19:21:39,581 - Server - WARNING - Thread: 4880 - Command: BLOCK_BROADCAST - From: 149.106.211.94:54152 - Warning: Denied, peer not recognized
+2018-03-13 19:21:49,384 - Server - INFO - Thread: 4880 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:44294 - Received duplicate or invalid message, ignoring
+2018-03-13 19:22:04,333 - Server - INFO - Thread: 4880 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:44334 - Received duplicate or invalid message, ignoring
+2018-03-13 19:22:19,479 - Server - INFO - Thread: 4880 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:44374 - Received duplicate or invalid message, ignoring
+2018-03-13 19:22:31,803 - Server - WARNING - Thread: 4880 - Command: BLOCK_BROADCAST - From: 149.106.211.94:54182 - Warning: Denied, peer not recognized
+2018-03-13 19:22:34,516 - Server - INFO - Thread: 4880 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:44414 - Received duplicate or invalid message, ignoring
+2018-03-13 19:22:48,690 - Server - WARNING - Thread: 4880 - Command: BLOCK_BROADCAST - From: 149.106.211.94:54212 - Warning: Denied, peer not recognized
+2018-03-13 19:22:49,360 - Server - INFO - Thread: 4880 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:44454 - Received duplicate or invalid message, ignoring
+2018-03-13 19:23:04,181 - Server - WARNING - Thread: 4880 - Command: BLOCK_BROADCAST - From: 10.76.30.129:43342 - Warning: Denied, peer not recognized
+2018-03-13 19:23:04,229 - Server - WARNING - Thread: 4880 - Command: BLOCK_BROADCAST - From: 10.76.30.22:51704 - Warning: Denied, peer not recognized
+2018-03-13 19:23:04,369 - Server - WARNING - Thread: 4880 - Command: BLOCK_BROADCAST - From: 10.76.31.173:45326 - Warning: Denied, peer not recognized
+2018-03-13 19:23:04,405 - Server - INFO - Thread: 4880 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:44494 - Received duplicate or invalid message, ignoring
+2018-03-13 19:23:19,537 - Server - INFO - Thread: 4880 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:44534 - Received duplicate or invalid message, ignoring
+2018-03-13 19:23:34,576 - Server - INFO - Thread: 4880 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:44574 - Received duplicate or invalid message, ignoring
+2018-03-13 19:23:41,893 - Server - WARNING - Thread: 4880 - Command: BLOCK_BROADCAST - From: 149.106.211.94:54246 - Warning: Denied, peer not recognized
+2018-03-13 19:23:49,618 - Server - INFO - Thread: 4880 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:44614 - Received duplicate or invalid message, ignoring
+2018-03-13 19:31:03,002 - Server - WARNING - =========== Server logging started ==========
+2018-03-13 19:31:03,008 - Server - INFO - Reading peers from peers.txt.
+2018-03-13 19:31:03,118 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-13 19:31:03,224 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-13 19:31:03,225 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-13 19:31:03,226 - Server - WARNING - ============ Server init complete ===========
+2018-03-13 19:31:03,226 - Server - INFO - Started up on port 50000
+2018-03-13 19:31:03,226 - Server - INFO - Thread: 6928 - Start requesting peers. 2 peers currently
+2018-03-13 19:31:03,227 - Server - WARNING - Thread: 7264 - Started updating from peers
+2018-03-13 19:31:03,335 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-13 19:31:03,336 - Server - WARNING - Thread: 6928 - Complete requesting peers. 2 peers currently
+2018-03-13 19:31:03,341 - Server - INFO - Thread: 7264 - Received 11 blocks from 149.106.60.81.
+2018-03-13 19:31:03,341 - Server - WARNING - Thread: 7264 - Completed updating from peers
+2018-03-13 19:31:05,252 - Server - INFO - Thread: 6928 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:45756 - Received duplicate or invalid message, ignoring
+2018-03-13 19:31:20,314 - Server - INFO - Thread: 6928 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:45798 - Received duplicate or invalid message, ignoring
+2018-03-13 19:31:35,354 - Server - INFO - Thread: 6928 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:45840 - Received duplicate or invalid message, ignoring
+2018-03-13 19:31:39,847 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('149.106.210.123', 0)]
+2018-03-13 19:31:39,847 - Server - INFO - Thread: 6928 - Command: PEER_REQUEST - From: 149.106.210.123:56789 - Accepted peer.
+2018-03-13 19:31:41,849 - Server - INFO - Thread: 6928 - Command: BLOCK_BROADCAST - From: 149.106.210.123:56810 - Received new block to process and broadcast
+2018-03-13 19:31:41,901 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:31:42,123 - Server - INFO - Broadcasting complete.
+2018-03-13 19:31:44,184 - Server - INFO - Thread: 6928 - Command: BLOCK_BROADCAST - From: 149.106.210.123:56829 - Received new block to process and broadcast
+2018-03-13 19:31:44,285 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:31:44,495 - Server - INFO - Broadcasting complete.
+2018-03-13 19:31:46,222 - Server - INFO - Thread: 6928 - Command: BLOCK_BROADCAST - From: 149.106.210.123:56848 - Received new block to process and broadcast
+2018-03-13 19:31:46,254 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:31:46,465 - Server - INFO - Broadcasting complete.
+2018-03-13 19:31:48,310 - Server - INFO - Thread: 6928 - Command: BLOCK_BROADCAST - From: 149.106.210.123:56867 - Received new block to process and broadcast
+2018-03-13 19:31:48,321 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:31:48,535 - Server - INFO - Broadcasting complete.
+2018-03-13 19:31:50,400 - Server - INFO - Thread: 6928 - Command: BLOCK_BROADCAST - From: 149.106.210.123:56886 - Received new block to process and broadcast
+2018-03-13 19:31:50,483 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:31:50,697 - Server - INFO - Broadcasting complete.
+2018-03-13 19:31:52,492 - Server - INFO - Thread: 6928 - Command: BLOCK_BROADCAST - From: 149.106.210.123:56905 - Received new block to process and broadcast
+2018-03-13 19:31:52,542 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:31:52,753 - Server - INFO - Broadcasting complete.
+2018-03-13 19:31:54,580 - Server - INFO - Thread: 6928 - Command: BLOCK_BROADCAST - From: 149.106.210.123:56924 - Received new block to process and broadcast
+2018-03-13 19:31:54,605 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:31:54,815 - Server - INFO - Broadcasting complete.
+2018-03-13 19:31:56,669 - Server - INFO - Thread: 6928 - Command: BLOCK_BROADCAST - From: 149.106.210.123:56943 - Received new block to process and broadcast
+2018-03-13 19:31:56,680 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:31:56,894 - Server - INFO - Broadcasting complete.
+2018-03-13 19:32:05,331 - Server - INFO - Thread: 6928 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:45926 - Received duplicate or invalid message, ignoring
+2018-03-13 19:32:20,372 - Server - INFO - Thread: 6928 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:45970 - Received duplicate or invalid message, ignoring
+2018-03-13 19:32:35,517 - Server - INFO - Thread: 6928 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:46012 - Received duplicate or invalid message, ignoring
+2018-03-13 19:32:50,453 - Server - INFO - Thread: 6928 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:46054 - Received duplicate or invalid message, ignoring
+2018-03-13 19:33:05,496 - Server - INFO - Thread: 6928 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:46096 - Received duplicate or invalid message, ignoring
+2018-03-13 19:33:15,417 - Server - WARNING - Thread: 6928 - Command: UPDATE_REQUEST - From: 149.106.210.123:56962 - Warning: Received invalid UPDATE_REQUEST
+2018-03-13 19:33:16,668 - Server - WARNING - Thread: 6928 - Command: BLOCK_BROADCAST - From: 10.76.30.129:43526 - Warning: Denied, peer not recognized
+2018-03-13 19:33:16,740 - Server - WARNING - Thread: 6928 - Command: BLOCK_BROADCAST - From: 10.76.30.22:51890 - Warning: Denied, peer not recognized
+2018-03-13 19:33:16,826 - Server - WARNING - Thread: 6928 - Command: BLOCK_BROADCAST - From: 10.76.31.173:45486 - Warning: Denied, peer not recognized
+2018-03-13 19:33:20,536 - Server - INFO - Thread: 6928 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:46138 - Received duplicate or invalid message, ignoring
+2018-03-13 19:33:23,410 - Server - INFO - Thread: 6928 - Command: BLOCK_BROADCAST - From: 149.106.210.123:56981 - Received new block to process and broadcast
+2018-03-13 19:33:23,425 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:33:23,640 - Server - INFO - Broadcasting complete.
+2018-03-13 19:33:25,448 - Server - INFO - Thread: 6928 - Command: BLOCK_BROADCAST - From: 149.106.210.123:57000 - Received duplicate or invalid message, ignoring
+2018-03-13 19:33:27,441 - Server - INFO - Thread: 6928 - Command: BLOCK_BROADCAST - From: 149.106.210.123:57019 - Received duplicate or invalid message, ignoring
+2018-03-13 19:33:30,671 - Server - INFO - Thread: 6928 - Command: BLOCK_BROADCAST - From: 149.106.210.123:57038 - Received new block to process and broadcast
+2018-03-13 19:33:30,749 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:33:30,926 - Server - WARNING - Thread: 6928 - Command: BLOCK_BROADCAST - From: 10.76.30.129:43566 - Warning: Denied, peer not recognized
+2018-03-13 19:33:30,965 - Server - INFO - Broadcasting complete.
+2018-03-13 19:33:31,395 - Server - WARNING - Thread: 6928 - Command: BLOCK_BROADCAST - From: 10.76.31.173:45526 - Warning: Denied, peer not recognized
+2018-03-13 19:33:31,399 - Server - WARNING - Thread: 6928 - Command: BLOCK_BROADCAST - From: 10.76.30.22:51930 - Warning: Denied, peer not recognized
+2018-03-13 19:33:33,073 - Server - INFO - Thread: 6928 - Command: BLOCK_BROADCAST - From: 149.106.210.123:57057 - Received new block to process and broadcast
+2018-03-13 19:33:33,132 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:33:33,278 - Server - WARNING - Thread: 6928 - Command: BLOCK_BROADCAST - From: 10.76.30.129:43606 - Warning: Denied, peer not recognized
+2018-03-13 19:33:33,344 - Server - INFO - Broadcasting complete.
+2018-03-13 19:33:33,799 - Server - WARNING - Thread: 6928 - Command: BLOCK_BROADCAST - From: 10.76.30.22:51970 - Warning: Denied, peer not recognized
+2018-03-13 19:33:33,839 - Server - WARNING - Thread: 6928 - Command: BLOCK_BROADCAST - From: 10.76.31.173:45566 - Warning: Denied, peer not recognized
+2018-03-13 19:33:34,974 - Server - INFO - Thread: 6928 - Command: BLOCK_BROADCAST - From: 149.106.210.123:57076 - Received duplicate or invalid message, ignoring
+2018-03-13 19:33:35,323 - Server - INFO - Thread: 6928 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:46180 - Received duplicate or invalid message, ignoring
+2018-03-13 19:33:38,714 - Server - INFO - Thread: 6928 - Command: BLOCK_BROADCAST - From: 149.106.210.123:57095 - Received new block to process and broadcast
+2018-03-13 19:33:38,930 - Server - WARNING - Thread: 6928 - Command: BLOCK_BROADCAST - From: 10.76.30.129:43646 - Warning: Denied, peer not recognized
+2018-03-13 19:33:39,542 - Server - WARNING - Thread: 6928 - Command: BLOCK_BROADCAST - From: 10.76.31.173:45606 - Warning: Denied, peer not recognized
+2018-03-13 19:40:31,002 - Server - WARNING - =========== Server logging started ==========
+2018-03-13 19:40:31,005 - Server - INFO - Reading peers from peers.txt.
+2018-03-13 19:40:31,114 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-13 19:40:31,220 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-13 19:40:31,318 - Server - INFO - Thread: 9488 - Peer request failed. 149.106.210.123
+2018-03-13 19:40:31,320 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-13 19:40:31,320 - Server - WARNING - ============ Server init complete ===========
+2018-03-13 19:40:31,320 - Server - INFO - Started up on port 50000
+2018-03-13 19:40:31,321 - Server - INFO - Thread: 7040 - Start requesting peers. 2 peers currently
+2018-03-13 19:40:31,321 - Server - WARNING - Thread: 7376 - Started updating from peers
+2018-03-13 19:40:31,426 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-13 19:40:31,427 - Server - WARNING - Thread: 7040 - Complete requesting peers. 2 peers currently
+2018-03-13 19:40:31,438 - Server - INFO - Thread: 7376 - Received 11 blocks from 149.106.60.81.
+2018-03-13 19:40:31,438 - Server - WARNING - Thread: 7376 - Completed updating from peers
+2018-03-13 19:40:36,169 - Server - INFO - Thread: 7040 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:47276 - Received duplicate or invalid message, ignoring
+2018-03-13 19:40:51,126 - Server - INFO - Thread: 7040 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:47316 - Received duplicate or invalid message, ignoring
+2018-03-13 19:40:56,162 - Server - WARNING - =========== Server logging started ==========
+2018-03-13 19:40:56,165 - Server - INFO - Reading peers from peers.txt.
+2018-03-13 19:40:56,275 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-13 19:40:56,379 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-13 19:40:56,381 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-13 19:40:56,381 - Server - WARNING - ============ Server init complete ===========
+2018-03-13 19:40:56,381 - Server - INFO - Started up on port 50000
+2018-03-13 19:40:56,382 - Server - INFO - Thread: 5952 - Start requesting peers. 2 peers currently
+2018-03-13 19:40:56,383 - Server - WARNING - Thread: 6288 - Started updating from peers
+2018-03-13 19:40:56,487 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-13 19:40:56,487 - Server - WARNING - Thread: 5952 - Complete requesting peers. 2 peers currently
+2018-03-13 19:40:56,497 - Server - INFO - Thread: 6288 - Received 11 blocks from 149.106.60.81.
+2018-03-13 19:40:56,497 - Server - WARNING - Thread: 6288 - Completed updating from peers
+2018-03-13 19:41:06,243 - Server - INFO - Thread: 5952 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:47356 - Received duplicate or invalid message, ignoring
+2018-03-13 19:41:21,208 - Server - INFO - Thread: 5952 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:47398 - Received duplicate or invalid message, ignoring
+2018-03-13 19:41:36,248 - Server - INFO - Thread: 5952 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:47440 - Received duplicate or invalid message, ignoring
+2018-03-13 19:41:51,289 - Server - INFO - Thread: 5952 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:47482 - Received duplicate or invalid message, ignoring
+2018-03-13 19:42:06,225 - Server - INFO - Thread: 5952 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:47524 - Received duplicate or invalid message, ignoring
+2018-03-13 19:42:21,265 - Server - INFO - Thread: 5952 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:47568 - Received duplicate or invalid message, ignoring
+2018-03-13 19:42:36,306 - Server - INFO - Thread: 5952 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:47612 - Received duplicate or invalid message, ignoring
+2018-03-13 19:42:51,451 - Server - INFO - Thread: 5952 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:47656 - Received duplicate or invalid message, ignoring
+2018-03-13 19:43:06,282 - Server - INFO - Thread: 5952 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:47700 - Received duplicate or invalid message, ignoring
+2018-03-13 19:43:21,324 - Server - INFO - Thread: 5952 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:47744 - Received duplicate or invalid message, ignoring
+2018-03-13 19:43:36,468 - Server - INFO - Thread: 5952 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:47788 - Received duplicate or invalid message, ignoring
+2018-03-13 19:44:55,724 - Server - WARNING - =========== Server logging started ==========
+2018-03-13 19:44:55,728 - Server - INFO - Reading peers from peers.txt.
+2018-03-13 19:44:55,837 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-13 19:44:55,943 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-13 19:44:55,944 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-13 19:44:55,944 - Server - WARNING - ============ Server init complete ===========
+2018-03-13 19:44:55,944 - Server - INFO - Started up on port 50000
+2018-03-13 19:44:55,945 - Server - INFO - Thread: 4608 - Start requesting peers. 2 peers currently
+2018-03-13 19:44:55,945 - Server - WARNING - Thread: 4944 - Started updating from peers
+2018-03-13 19:44:56,052 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0)]
+2018-03-13 19:44:56,053 - Server - WARNING - Thread: 4608 - Complete requesting peers. 2 peers currently
+2018-03-13 19:44:56,057 - Server - INFO - Thread: 4944 - Received 11 blocks from 149.106.60.81.
+2018-03-13 19:44:56,057 - Server - WARNING - Thread: 4944 - Completed updating from peers
+2018-03-13 19:45:06,476 - Server - INFO - Thread: 4608 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:48052 - Received duplicate or invalid message, ignoring
+2018-03-13 19:45:21,440 - Server - INFO - Thread: 4608 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:48096 - Received duplicate or invalid message, ignoring
+2018-03-13 19:45:36,416 - Server - INFO - Thread: 4608 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:48140 - Received duplicate or invalid message, ignoring
+2018-03-13 19:45:51,416 - Server - INFO - Thread: 4608 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:48184 - Received duplicate or invalid message, ignoring
+2018-03-13 19:46:06,456 - Server - INFO - Thread: 4608 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:48228 - Received duplicate or invalid message, ignoring
+2018-03-13 19:46:21,499 - Server - INFO - Thread: 4608 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:48272 - Received duplicate or invalid message, ignoring
+2018-03-13 19:46:36,538 - Server - INFO - Thread: 4608 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:48316 - Received duplicate or invalid message, ignoring
+2018-03-13 19:46:51,579 - Server - INFO - Thread: 4608 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:48360 - Received duplicate or invalid message, ignoring
+2018-03-13 19:46:52,203 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0)]
+2018-03-13 19:46:52,203 - Server - INFO - Thread: 4608 - Command: PEER_REQUEST - From: 10.76.31.252:38672 - Accepted peer.
+2018-03-13 19:46:53,980 - Server - WARNING - Thread: 4608 - Command: UPDATE_REQUEST - From: 10.76.31.252:38740 - Warning: Received invalid UPDATE_REQUEST
+2018-03-13 19:46:54,043 - Server - INFO - Thread: 4608 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:38742 - Received duplicate or invalid message, ignoring
+2018-03-13 19:47:06,619 - Server - INFO - Thread: 4608 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:48404 - Received duplicate or invalid message, ignoring
+2018-03-13 19:47:06,637 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:47:06,741 - Server - WARNING - Peer failed to receive broadcasting
+2018-03-13 19:47:06,742 - Server - INFO - Thread: 9776 - Warning: Punishing peer 10.76.31.252.
+2018-03-13 19:47:06,742 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 1)]
+2018-03-13 19:47:06,742 - Server - INFO - Broadcasting complete.
+2018-03-13 19:47:21,567 - Server - INFO - Thread: 4608 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:48448 - Received duplicate or invalid message, ignoring
+2018-03-13 19:47:36,595 - Server - INFO - Thread: 4608 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:48490 - Received duplicate or invalid message, ignoring
+2018-03-13 19:47:51,638 - Server - INFO - Thread: 4608 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:48534 - Received duplicate or invalid message, ignoring
+2018-03-13 19:48:06,678 - Server - INFO - Thread: 4608 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:48576 - Received duplicate or invalid message, ignoring
+2018-03-13 19:48:21,615 - Server - INFO - Thread: 4608 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:48618 - Received duplicate or invalid message, ignoring
+2018-03-13 19:48:36,759 - Server - INFO - Thread: 4608 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:48660 - Received duplicate or invalid message, ignoring
+2018-03-13 19:55:18,924 - Server - WARNING - =========== Server logging started ==========
+2018-03-13 19:55:18,927 - Server - INFO - Reading peers from peers.txt.
+2018-03-13 19:55:19,036 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-13 19:55:19,140 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-13 19:55:19,245 - Server - INFO - Thread: 9488 - Peer request accepted. 10.76.31.252
+2018-03-13 19:55:19,247 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0)]
+2018-03-13 19:55:19,247 - Server - WARNING - ============ Server init complete ===========
+2018-03-13 19:55:19,247 - Server - INFO - Started up on port 50000
+2018-03-13 19:55:19,248 - Server - INFO - Thread: 9184 - Start requesting peers. 3 peers currently
+2018-03-13 19:55:19,249 - Server - WARNING - Thread: 9520 - Started updating from peers
+2018-03-13 19:55:19,363 - Server - INFO - Thread: 9520 - Received 11 blocks from 149.106.60.81.
+2018-03-13 19:55:19,468 - Server - INFO - Thread: 9520 - Received 1 blocks from 10.76.31.252.
+2018-03-13 19:55:19,468 - Server - WARNING - Thread: 9520 - Completed updating from peers
+2018-03-13 19:55:19,568 - Server - INFO - Thread: 9184 - Peer request accepted. 10.76.31.173
+2018-03-13 19:55:19,673 - Server - INFO - Thread: 9184 - Peer request accepted. 10.76.30.129
+2018-03-13 19:55:19,779 - Server - INFO - Thread: 9184 - Peer request accepted. 10.76.30.22
+2018-03-13 19:55:19,889 - Server - INFO - Thread: 9184 - Peer request accepted. 149.106.211.94
+2018-03-13 19:55:19,996 - Server - INFO - Thread: 9184 - Peer request accepted. 10.76.31.152
+2018-03-13 19:55:20,104 - Server - INFO - Thread: 9184 - Peer request accepted. 149.106.60.19
+2018-03-13 19:55:20,105 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0), ('10.76.31.173', 0), ('10.76.30.129', 0), ('10.76.30.22', 0), ('149.106.211.94', 0), ('10.76.31.152', 0), ('149.106.60.19', 0)]
+2018-03-13 19:55:20,105 - Server - WARNING - Thread: 9184 - Complete requesting peers. 9 peers currently
+2018-03-13 19:55:20,547 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:50602 - Received duplicate or invalid message, ignoring
+2018-03-13 19:55:21,079 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:39932 - Received duplicate or invalid message, ignoring
+2018-03-13 19:55:22,273 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:50638 - Received duplicate or invalid message, ignoring
+2018-03-13 19:55:22,359 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:49734 - Received duplicate or invalid message, ignoring
+2018-03-13 19:55:22,754 - Server - INFO - Thread: 9184 - Command: BLOCK_BROADCAST - From: 149.106.211.94:55556 - Received new block to process and broadcast
+2018-03-13 19:55:22,756 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:55:22,893 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:39948 - Received duplicate or invalid message, ignoring
+2018-03-13 19:55:23,597 - Server - INFO - Broadcasting complete.
+2018-03-13 19:55:24,136 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:50674 - Received duplicate or invalid message, ignoring
+2018-03-13 19:55:24,734 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:39964 - Received duplicate or invalid message, ignoring
+2018-03-13 19:55:25,988 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:50710 - Received duplicate or invalid message, ignoring
+2018-03-13 19:55:33,613 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:50748 - Received duplicate or invalid message, ignoring
+2018-03-13 19:55:37,133 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:50784 - Received duplicate or invalid message, ignoring
+2018-03-13 19:55:37,201 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:55:37,204 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:49776 - Received duplicate or invalid message, ignoring
+2018-03-13 19:55:37,310 - Server - WARNING - Peer failed to receive broadcasting
+2018-03-13 19:55:37,991 - Server - INFO - Thread: 4352 - Warning: Punishing peer 10.76.31.252.
+2018-03-13 19:55:37,992 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 1), ('10.76.31.173', 0), ('10.76.30.129', 0), ('10.76.30.22', 0), ('149.106.211.94', 0), ('10.76.31.152', 0), ('149.106.60.19', 0)]
+2018-03-13 19:55:37,992 - Server - INFO - Broadcasting complete.
+2018-03-13 19:55:48,549 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:50822 - Received duplicate or invalid message, ignoring
+2018-03-13 19:55:52,206 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:50858 - Received duplicate or invalid message, ignoring
+2018-03-13 19:55:52,251 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:49818 - Received duplicate or invalid message, ignoring
+2018-03-13 19:56:04,007 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:50896 - Received duplicate or invalid message, ignoring
+2018-03-13 19:56:07,126 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:50932 - Received duplicate or invalid message, ignoring
+2018-03-13 19:56:07,197 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:49860 - Received duplicate or invalid message, ignoring
+2018-03-13 19:56:22,287 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:49902 - Received duplicate or invalid message, ignoring
+2018-03-13 19:56:27,305 - Server - INFO - Thread: 9184 - Command: BLOCK_BROADCAST - From: 149.106.211.94:55590 - Received new block to process and broadcast
+2018-03-13 19:56:27,396 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:56:27,506 - Server - WARNING - Peer failed to receive broadcasting
+2018-03-13 19:56:28,146 - Server - INFO - Thread: 4352 - Warning: Punishing peer 10.76.31.252.
+2018-03-13 19:56:28,147 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 2), ('10.76.31.173', 0), ('10.76.30.129', 0), ('10.76.30.22', 0), ('149.106.211.94', 0), ('10.76.31.152', 0), ('149.106.60.19', 0)]
+2018-03-13 19:56:28,147 - Server - INFO - Broadcasting complete.
+2018-03-13 19:56:37,431 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:49944 - Received duplicate or invalid message, ignoring
+2018-03-13 19:56:43,382 - Server - WARNING - Thread: 9184 - Command: PEER_REQUEST - From: 10.76.31.252:39988 - Already accepted peer.
+2018-03-13 19:56:45,368 - Server - WARNING - Thread: 9184 - Command: UPDATE_REQUEST - From: 10.76.31.252:40004 - Warning: Received invalid UPDATE_REQUEST
+2018-03-13 19:56:46,308 - Server - INFO - Thread: 9184 - Command: PEERS_REQUEST - From: 10.76.31.252:40020 - Sent 8 peers to peer
+2018-03-13 19:56:52,470 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:49986 - Received duplicate or invalid message, ignoring
+2018-03-13 19:56:52,519 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:56:53,399 - Server - INFO - Broadcasting complete.
+2018-03-13 19:56:57,275 - Server - WARNING - Thread: 9184 - Command: UPDATE_REQUEST - From: 10.76.31.252:40220 - Warning: Received invalid UPDATE_REQUEST
+2018-03-13 19:57:07,513 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50028 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:08,138 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40392 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:22,458 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50070 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:23,079 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40408 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:23,635 - Server - INFO - Thread: 9184 - Command: BLOCK_BROADCAST - From: 149.106.211.94:55618 - Received new block to process and broadcast
+2018-03-13 19:57:23,732 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:57:24,586 - Server - INFO - Broadcasting complete.
+2018-03-13 19:57:33,107 - Server - INFO - Thread: 9184 - Command: BLOCK_BROADCAST - From: 149.106.211.94:55648 - Received new block to process and broadcast
+2018-03-13 19:57:33,167 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:57:34,013 - Server - INFO - Broadcasting complete.
+2018-03-13 19:57:37,503 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50112 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:38,225 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40428 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:46,159 - Server - INFO - Thread: 9184 - Command: BLOCK_BROADCAST - From: 149.106.60.19:50980 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:46,577 - Server - INFO - Thread: 9184 - Command: BLOCK_BROADCAST - From: 10.76.30.129:49744 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:46,622 - Server - INFO - Thread: 9184 - Command: BLOCK_BROADCAST - From: 10.76.30.22:58072 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:46,634 - Server - INFO - Thread: 9184 - Command: BLOCK_BROADCAST - From: 10.76.31.173:51608 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:47,975 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51016 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:48,226 - Server - INFO - Thread: 9184 - Command: BLOCK_BROADCAST - From: 149.106.211.94:55678 - Received new block to process and broadcast
+2018-03-13 19:57:48,305 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:57:48,659 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40444 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:49,151 - Server - INFO - Broadcasting complete.
+2018-03-13 19:57:49,792 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51052 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:50,474 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40462 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:50,493 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:57:51,336 - Server - INFO - Broadcasting complete.
+2018-03-13 19:57:51,611 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51088 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:52,321 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40478 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:52,551 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50154 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:53,261 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40494 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:53,429 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51126 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:54,072 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40510 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:55,245 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51162 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:55,976 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40526 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:57,127 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51198 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:58,169 - Server - WARNING - Thread: 9184 - Command: UPDATE_REQUEST - From: 10.76.31.252:40542 - Warning: Received invalid UPDATE_REQUEST
+2018-03-13 19:57:58,981 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51234 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:59,068 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:57:59,596 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40558 - Received duplicate or invalid message, ignoring
+2018-03-13 19:57:59,913 - Server - INFO - Broadcasting complete.
+2018-03-13 19:58:00,885 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51270 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:02,767 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51306 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:04,584 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51342 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:05,273 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40574 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:06,400 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51378 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:06,947 - Server - INFO - Thread: 9184 - Command: BLOCK_BROADCAST - From: 149.106.211.94:55708 - Received new block to process and broadcast
+2018-03-13 19:58:07,005 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:58:07,494 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50194 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:07,858 - Server - INFO - Broadcasting complete.
+2018-03-13 19:58:08,197 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40590 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:08,218 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51416 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:09,033 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40606 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:09,103 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:58:09,946 - Server - INFO - Broadcasting complete.
+2018-03-13 19:58:10,035 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51452 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:11,852 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51488 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:13,524 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40622 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:13,670 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51524 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:15,509 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51560 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:16,240 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40638 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:22,540 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51596 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:22,547 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50234 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:23,164 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40654 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:24,854 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 149.106.60.19:51634 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:24,918 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:58:25,479 - Server - INFO - Thread: 9184 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40670 - Received duplicate or invalid message, ignoring
+2018-03-13 19:58:25,767 - Server - INFO - Broadcasting complete.
+2018-03-13 19:58:39,392 - Server - WARNING - =========== Server logging started ==========
+2018-03-13 19:58:39,396 - Server - INFO - Reading peers from peers.txt.
+2018-03-13 19:58:39,504 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-13 19:58:39,608 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-13 19:58:39,713 - Server - INFO - Thread: 9488 - Peer request accepted. 10.76.31.252
+2018-03-13 19:58:39,819 - Server - INFO - Thread: 9488 - Peer request accepted. 10.76.31.173
+2018-03-13 19:58:39,926 - Server - INFO - Thread: 9488 - Peer request accepted. 10.76.30.129
+2018-03-13 19:58:40,035 - Server - INFO - Thread: 9488 - Peer request accepted. 10.76.30.22
+2018-03-13 19:58:40,143 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.211.94
+2018-03-13 19:58:40,249 - Server - INFO - Thread: 9488 - Peer request accepted. 10.76.31.152
+2018-03-13 19:58:40,355 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.19
+2018-03-13 19:58:40,356 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0), ('10.76.31.173', 0), ('10.76.30.129', 0), ('10.76.30.22', 0), ('149.106.211.94', 0), ('10.76.31.152', 0), ('149.106.60.19', 0)]
+2018-03-13 19:58:40,357 - Server - WARNING - ============ Server init complete ===========
+2018-03-13 19:58:40,357 - Server - INFO - Started up on port 50000
+2018-03-13 19:58:40,357 - Server - INFO - Thread: 336 - Start requesting peers. 9 peers currently
+2018-03-13 19:58:40,358 - Server - WARNING - Thread: 672 - Started updating from peers
+2018-03-13 19:58:40,471 - Server - INFO - Thread: 672 - Received 11 blocks from 149.106.60.81.
+2018-03-13 19:58:40,577 - Server - INFO - Thread: 672 - Received 1 blocks from 10.76.31.252.
+2018-03-13 19:58:41,312 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.201
+2018-03-13 19:58:41,420 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.207
+2018-03-13 19:58:41,525 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.204
+2018-03-13 19:58:41,633 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.202
+2018-03-13 19:58:41,742 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.201
+2018-03-13 19:58:41,745 - Server - INFO - Thread: 336 - Peer request failed. 149.106.47.48
+2018-03-13 19:58:41,849 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.206
+2018-03-13 19:58:41,956 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.204
+2018-03-13 19:58:42,063 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.203
+2018-03-13 19:58:42,172 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.208
+2018-03-13 19:58:42,279 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.207
+2018-03-13 19:58:42,388 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.208
+2018-03-13 19:58:42,495 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.210.123
+2018-03-13 19:58:42,599 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.210
+2018-03-13 19:58:42,706 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.205
+2018-03-13 19:58:42,808 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.209
+2018-03-13 19:58:42,914 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.209
+2018-03-13 19:58:42,916 - Server - INFO - Thread: 336 - Peer request failed. 149.106.47.48
+2018-03-13 19:58:42,919 - Server - INFO - Thread: 336 - Peer request failed. 149.106.47.47
+2018-03-13 19:58:43,027 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.201
+2018-03-13 19:58:43,133 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.210.123
+2018-03-13 19:58:43,217 - Server - INFO - Thread: 672 - Warning: Punishing peer 10.76.31.173.
+2018-03-13 19:58:43,218 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0), ('10.76.31.173', 1), ('10.76.30.129', 0), ('10.76.30.22', 0), ('149.106.211.94', 0), ('10.76.31.152', 0), ('149.106.60.19', 0)]
+2018-03-13 19:58:43,218 - Server - INFO - Thread: 672 - Warning: Punishing peer 10.76.30.129.
+2018-03-13 19:58:43,219 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 0), ('149.106.211.94', 0), ('10.76.31.152', 0), ('149.106.60.19', 0)]
+2018-03-13 19:58:43,219 - Server - INFO - Thread: 672 - Warning: Punishing peer 10.76.30.22.
+2018-03-13 19:58:43,220 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 0), ('10.76.31.152', 0), ('149.106.60.19', 0)]
+2018-03-13 19:58:43,220 - Server - INFO - Thread: 672 - Warning: Punishing peer 149.106.211.94.
+2018-03-13 19:58:43,220 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 1), ('10.76.31.152', 0), ('149.106.60.19', 0)]
+2018-03-13 19:58:43,221 - Server - INFO - Thread: 672 - Warning: Punishing peer 10.76.31.152.
+2018-03-13 19:58:43,221 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 1), ('10.76.31.152', 1), ('149.106.60.19', 0)]
+2018-03-13 19:58:43,221 - Server - INFO - Thread: 672 - Warning: Punishing peer 149.106.60.19.
+2018-03-13 19:58:43,222 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 1), ('10.76.31.152', 1), ('149.106.60.19', 1)]
+2018-03-13 19:58:43,222 - Server - WARNING - Thread: 672 - Completed updating from peers
+2018-03-13 19:58:43,240 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.206
+2018-03-13 19:58:43,348 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.209
+2018-03-13 19:58:43,455 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.203
+2018-03-13 19:58:43,562 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.210
+2018-03-13 19:58:43,669 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.206
+2018-03-13 19:58:44,776 - Server - INFO - Thread: 336 - Peer request failed. 10.76.30.214
+2018-03-13 19:58:44,884 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.202
+2018-03-13 19:58:44,990 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.205
+2018-03-13 19:58:45,094 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.202
+2018-03-13 19:58:45,199 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.203
+2018-03-13 19:58:45,305 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.203
+2018-03-13 19:58:45,413 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.209
+2018-03-13 19:58:45,520 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.208
+2018-03-13 19:58:45,627 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.204
+2018-03-13 19:58:45,733 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.205
+2018-03-13 19:58:45,837 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.206
+2018-03-13 19:58:45,944 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.202
+2018-03-13 19:58:46,050 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.208
+2018-03-13 19:58:47,160 - Server - INFO - Thread: 336 - Peer request failed. 10.76.30.214
+2018-03-13 19:58:47,265 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.209
+2018-03-13 19:58:47,372 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.201
+2018-03-13 19:58:47,476 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.201
+2018-03-13 19:58:47,581 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.206
+2018-03-13 19:58:47,687 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.204
+2018-03-13 19:58:47,791 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.202
+2018-03-13 19:58:47,898 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.204
+2018-03-13 19:58:48,004 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.207
+2018-03-13 19:58:48,109 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.210.123
+2018-03-13 19:58:48,214 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.207
+2018-03-13 19:58:48,216 - Server - INFO - Thread: 336 - Peer request failed. 149.106.47.48
+2018-03-13 19:58:48,321 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.207
+2018-03-13 19:58:48,426 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.203
+2018-03-13 19:58:48,531 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.210
+2018-03-13 19:58:48,634 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.210
+2018-03-13 19:58:48,741 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.201
+2018-03-13 19:58:48,849 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.210.123
+2018-03-13 19:58:48,955 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.205
+2018-03-13 19:58:48,957 - Server - INFO - Thread: 336 - Peer request failed. 149.106.47.48
+2018-03-13 19:58:49,063 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.208
+2018-03-13 19:58:49,066 - Server - INFO - Thread: 336 - Peer request failed. 10.76.31.177
+2018-03-13 19:58:49,173 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.210
+2018-03-13 19:58:49,279 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.209
+2018-03-13 19:58:49,383 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.210
+2018-03-13 19:58:49,487 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.205
+2018-03-13 19:58:49,594 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.205
+2018-03-13 19:58:49,699 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.206
+2018-03-13 19:58:49,805 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.208
+2018-03-13 19:58:50,912 - Server - INFO - Thread: 336 - Peer request failed. 10.76.30.214
+2018-03-13 19:58:50,915 - Server - INFO - Thread: 336 - Peer request failed. 149.106.60.204
+2018-03-13 19:58:51,021 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.207
+2018-03-13 19:58:51,129 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.210.123
+2018-03-13 19:58:51,131 - Server - INFO - Thread: 336 - Peer request failed. 149.106.47.46
+2018-03-13 19:58:51,234 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.202
+2018-03-13 19:58:51,338 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.204
+2018-03-13 19:58:51,458 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.62.203
+2018-03-13 19:58:51,567 - Server - WARNING - Thread: 336 - Peer request denied. 149.106.210.123
+2018-03-13 19:58:51,567 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 1), ('10.76.31.152', 1), ('149.106.60.19', 1)]
+2018-03-13 19:58:51,568 - Server - WARNING - Thread: 336 - Complete requesting peers. 9 peers currently
+2018-03-13 19:58:52,692 - Server - ERROR - Thread: 336 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50314 - Exception in handling request
+Traceback (most recent call last):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/network.py", line 422, in handle_connection
+    elif self.blockchain.add_message_str(msg_str):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/blockchain.py", line 92, in add_message_str
+    print(binascii.unhexlify(msg.msg_body))
+binascii.Error: Odd-length string
+
+2018-03-13 19:58:53,422 - Server - ERROR - Thread: 336 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40704 - Exception in handling request
+Traceback (most recent call last):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/network.py", line 422, in handle_connection
+    elif self.blockchain.add_message_str(msg_str):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/blockchain.py", line 92, in add_message_str
+    print(binascii.unhexlify(msg.msg_body))
+binascii.Error: Odd-length string
+
+2018-03-13 19:58:59,063 - Server - WARNING - Thread: 336 - Command: UPDATE_REQUEST - From: 10.76.31.252:40720 - Warning: Received invalid UPDATE_REQUEST
+2018-03-13 19:59:07,635 - Server - ERROR - Thread: 336 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50354 - Exception in handling request
+Traceback (most recent call last):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/network.py", line 422, in handle_connection
+    elif self.blockchain.add_message_str(msg_str):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/blockchain.py", line 92, in add_message_str
+    print(binascii.unhexlify(msg.msg_body))
+binascii.Error: Non-hexadecimal digit found
+
+2018-03-13 19:59:08,341 - Server - ERROR - Thread: 336 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40736 - Exception in handling request
+Traceback (most recent call last):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/network.py", line 422, in handle_connection
+    elif self.blockchain.add_message_str(msg_str):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/blockchain.py", line 92, in add_message_str
+    print(binascii.unhexlify(msg.msg_body))
+binascii.Error: Non-hexadecimal digit found
+
+2018-03-13 19:59:12,068 - Server - INFO - Thread: 336 - Command: BLOCK_BROADCAST - From: 149.106.211.94:55738 - Received new block to process and broadcast
+2018-03-13 19:59:12,094 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:59:12,948 - Server - INFO - Broadcasting complete.
+2018-03-13 19:59:22,773 - Server - ERROR - Thread: 336 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50394 - Exception in handling request
+Traceback (most recent call last):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/network.py", line 422, in handle_connection
+    elif self.blockchain.add_message_str(msg_str):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/blockchain.py", line 92, in add_message_str
+    print(binascii.unhexlify(msg.msg_body))
+binascii.Error: Odd-length string
+
+2018-03-13 19:59:23,388 - Server - ERROR - Thread: 336 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40752 - Exception in handling request
+Traceback (most recent call last):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/network.py", line 422, in handle_connection
+    elif self.blockchain.add_message_str(msg_str):
+  File "/Users/Ben_Kopchains/Documents/Homework/CSC-483/Project_4/blockchain.py", line 92, in add_message_str
+    print(binascii.unhexlify(msg.msg_body))
+binascii.Error: Odd-length string
+
+2018-03-13 19:59:38,389 - Server - WARNING - =========== Server logging started ==========
+2018-03-13 19:59:38,393 - Server - INFO - Reading peers from peers.txt.
+2018-03-13 19:59:38,502 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-13 19:59:38,609 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-13 19:59:38,715 - Server - INFO - Thread: 9488 - Peer request accepted. 10.76.31.252
+2018-03-13 19:59:38,819 - Server - INFO - Thread: 9488 - Peer request accepted. 10.76.31.173
+2018-03-13 19:59:38,926 - Server - INFO - Thread: 9488 - Peer request accepted. 10.76.30.129
+2018-03-13 19:59:39,030 - Server - INFO - Thread: 9488 - Peer request accepted. 10.76.30.22
+2018-03-13 19:59:39,138 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.211.94
+2018-03-13 19:59:39,246 - Server - INFO - Thread: 9488 - Peer request accepted. 10.76.31.152
+2018-03-13 19:59:39,353 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.19
+2018-03-13 19:59:39,355 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0), ('10.76.31.173', 0), ('10.76.30.129', 0), ('10.76.30.22', 0), ('149.106.211.94', 0), ('10.76.31.152', 0), ('149.106.60.19', 0)]
+2018-03-13 19:59:39,356 - Server - WARNING - ============ Server init complete ===========
+2018-03-13 19:59:39,356 - Server - INFO - Started up on port 50000
+2018-03-13 19:59:39,356 - Server - INFO - Thread: 2400 - Start requesting peers. 9 peers currently
+2018-03-13 19:59:39,357 - Server - WARNING - Thread: 2736 - Started updating from peers
+2018-03-13 19:59:39,470 - Server - INFO - Thread: 2736 - Received 11 blocks from 149.106.60.81.
+2018-03-13 19:59:39,573 - Server - INFO - Thread: 2736 - Received 1 blocks from 10.76.31.252.
+2018-03-13 19:59:40,311 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.210.123
+2018-03-13 19:59:40,418 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.203
+2018-03-13 19:59:40,524 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.208
+2018-03-13 19:59:40,630 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.210
+2018-03-13 19:59:40,736 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.206
+2018-03-13 19:59:40,839 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.205
+2018-03-13 19:59:40,947 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.210.123
+2018-03-13 19:59:41,054 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.203
+2018-03-13 19:59:41,056 - Server - INFO - Thread: 2400 - Peer request failed. 149.106.47.48
+2018-03-13 19:59:41,162 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.201
+2018-03-13 19:59:41,265 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.203
+2018-03-13 19:59:41,370 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.207
+2018-03-13 19:59:41,479 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.204
+2018-03-13 19:59:41,585 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.210
+2018-03-13 19:59:41,692 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.201
+2018-03-13 19:59:41,799 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.209
+2018-03-13 19:59:41,904 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.202
+2018-03-13 19:59:42,011 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.210
+2018-03-13 19:59:42,119 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.209
+2018-03-13 19:59:42,121 - Server - INFO - Thread: 2400 - Peer request failed. 149.106.47.47
+2018-03-13 19:59:42,216 - Server - INFO - Thread: 2736 - Warning: Punishing peer 10.76.31.173.
+2018-03-13 19:59:42,216 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0), ('10.76.31.173', 1), ('10.76.30.129', 0), ('10.76.30.22', 0), ('149.106.211.94', 0), ('10.76.31.152', 0), ('149.106.60.19', 0)]
+2018-03-13 19:59:42,217 - Server - INFO - Thread: 2736 - Warning: Punishing peer 10.76.30.129.
+2018-03-13 19:59:42,217 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 0), ('149.106.211.94', 0), ('10.76.31.152', 0), ('149.106.60.19', 0)]
+2018-03-13 19:59:42,217 - Server - INFO - Thread: 2736 - Warning: Punishing peer 10.76.30.22.
+2018-03-13 19:59:42,218 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 0), ('10.76.31.152', 0), ('149.106.60.19', 0)]
+2018-03-13 19:59:42,218 - Server - INFO - Thread: 2736 - Warning: Punishing peer 149.106.211.94.
+2018-03-13 19:59:42,218 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 1), ('10.76.31.152', 0), ('149.106.60.19', 0)]
+2018-03-13 19:59:42,219 - Server - INFO - Thread: 2736 - Warning: Punishing peer 10.76.31.152.
+2018-03-13 19:59:42,219 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 1), ('10.76.31.152', 1), ('149.106.60.19', 0)]
+2018-03-13 19:59:42,219 - Server - INFO - Thread: 2736 - Warning: Punishing peer 149.106.60.19.
+2018-03-13 19:59:42,220 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 1), ('10.76.31.152', 1), ('149.106.60.19', 1)]
+2018-03-13 19:59:42,220 - Server - WARNING - Thread: 2736 - Completed updating from peers
+2018-03-13 19:59:42,230 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.205
+2018-03-13 19:59:42,337 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.204
+2018-03-13 19:59:42,339 - Server - INFO - Thread: 2400 - Peer request failed. 149.106.60.204
+2018-03-13 19:59:42,446 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.207
+2018-03-13 19:59:42,554 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.207
+2018-03-13 19:59:42,661 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.210
+2018-03-13 19:59:42,769 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.205
+2018-03-13 19:59:42,872 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.208
+2018-03-13 19:59:42,980 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.204
+2018-03-13 19:59:42,982 - Server - INFO - Thread: 2400 - Peer request failed. 149.106.47.48
+2018-03-13 19:59:43,090 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.206
+2018-03-13 19:59:43,196 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.201
+2018-03-13 19:59:43,198 - Server - INFO - Thread: 2400 - Peer request failed. 149.106.47.46
+2018-03-13 19:59:43,305 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.207
+2018-03-13 19:59:43,412 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.205
+2018-03-13 19:59:43,519 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.203
+2018-03-13 19:59:43,624 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.208
+2018-03-13 19:59:43,730 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.202
+2018-03-13 19:59:43,835 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.202
+2018-03-13 19:59:43,942 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.205
+2018-03-13 19:59:44,051 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.202
+2018-03-13 19:59:44,157 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.204
+2018-03-13 19:59:44,264 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.201
+2018-03-13 19:59:44,371 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.210
+2018-03-13 19:59:44,480 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.206
+2018-03-13 19:59:44,587 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.206
+2018-03-13 19:59:45,696 - Server - INFO - Thread: 2400 - Peer request failed. 10.76.30.214
+2018-03-13 19:59:45,802 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.209
+2018-03-13 19:59:45,906 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.203
+2018-03-13 19:59:46,013 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.207
+2018-03-13 19:59:46,015 - Server - INFO - Thread: 2400 - Peer request failed. 149.106.47.48
+2018-03-13 19:59:46,121 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.210.123
+2018-03-13 19:59:47,230 - Server - INFO - Thread: 2400 - Peer request failed. 10.76.30.214
+2018-03-13 19:59:47,338 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.206
+2018-03-13 19:59:47,440 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.206
+2018-03-13 19:59:47,549 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.202
+2018-03-13 19:59:47,551 - Server - INFO - Thread: 2400 - Peer request failed. 10.76.31.177
+2018-03-13 19:59:47,658 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.210.123
+2018-03-13 19:59:47,767 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.201
+2018-03-13 19:59:47,875 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.201
+2018-03-13 19:59:47,983 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.204
+2018-03-13 19:59:48,090 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.203
+2018-03-13 19:59:49,196 - Server - INFO - Thread: 2400 - Peer request failed. 10.76.30.214
+2018-03-13 19:59:49,304 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.210.123
+2018-03-13 19:59:49,412 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.210.123
+2018-03-13 19:59:49,516 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.210
+2018-03-13 19:59:49,619 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.208
+2018-03-13 19:59:49,726 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.209
+2018-03-13 19:59:49,833 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.208
+2018-03-13 19:59:49,937 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.209
+2018-03-13 19:59:50,042 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.202
+2018-03-13 19:59:50,045 - Server - INFO - Thread: 2400 - Peer request failed. 149.106.47.48
+2018-03-13 19:59:50,153 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.209
+2018-03-13 19:59:50,259 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.208
+2018-03-13 19:59:50,363 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.207
+2018-03-13 19:59:50,470 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.205
+2018-03-13 19:59:50,575 - Server - WARNING - Thread: 2400 - Peer request denied. 149.106.62.204
+2018-03-13 19:59:50,576 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.252', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 1), ('10.76.31.152', 1), ('149.106.60.19', 1)]
+2018-03-13 19:59:50,576 - Server - WARNING - Thread: 2400 - Complete requesting peers. 9 peers currently
+2018-03-13 19:59:50,772 - Server - INFO - Thread: 2400 - Command: BLOCK_BROADCAST - From: 149.106.211.94:55768 - Received new block to process and broadcast
+2018-03-13 19:59:50,774 - Server - INFO - Broadcasting block to peers.
+2018-03-13 19:59:51,620 - Server - INFO - Broadcasting complete.
+2018-03-13 19:59:52,824 - Server - INFO - Thread: 2400 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50474 - Received duplicate or invalid message, ignoring
+2018-03-13 19:59:53,377 - Server - INFO - Thread: 2400 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40786 - Received duplicate or invalid message, ignoring
+2018-03-13 19:59:59,956 - Server - WARNING - Thread: 2400 - Command: UPDATE_REQUEST - From: 10.76.31.252:40802 - Warning: Received invalid UPDATE_REQUEST
+2018-03-13 20:00:07,696 - Server - INFO - Thread: 2400 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50514 - Received duplicate or invalid message, ignoring
+2018-03-13 20:00:08,418 - Server - INFO - Thread: 2400 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:40820 - Received duplicate or invalid message, ignoring
+2018-03-13 20:00:08,902 - Server - INFO - Thread: 2400 - Command: BLOCK_BROADCAST - From: 149.106.60.19:51718 - Received duplicate or invalid message, ignoring
+2018-03-13 20:00:09,258 - Server - INFO - Thread: 2400 - Command: BLOCK_BROADCAST - From: 10.76.30.129:49790 - Received duplicate or invalid message, ignoring
+2018-03-13 20:00:09,357 - Server - INFO - Thread: 2400 - Command: BLOCK_BROADCAST - From: 10.76.30.22:58114 - Received duplicate or invalid message, ignoring
+2018-03-13 20:00:09,513 - Server - INFO - Thread: 2400 - Command: BLOCK_BROADCAST - From: 10.76.31.173:51648 - Received duplicate or invalid message, ignoring
+2018-03-13 20:01:16,062 - Server - WARNING - =========== Server logging started ==========
+2018-03-13 20:01:16,066 - Server - INFO - Reading peers from peers.txt.
+2018-03-13 20:01:16,175 - Server - INFO - Thread: 9488 - Peer request accepted. andersm2-macpro.union.edu
+2018-03-13 20:01:16,277 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.81
+2018-03-13 20:01:17,385 - Server - INFO - Thread: 9488 - Peer request failed. 10.76.31.252
+2018-03-13 20:01:17,493 - Server - INFO - Thread: 9488 - Peer request accepted. 10.76.31.173
+2018-03-13 20:01:17,601 - Server - INFO - Thread: 9488 - Peer request accepted. 10.76.30.129
+2018-03-13 20:01:17,704 - Server - INFO - Thread: 9488 - Peer request accepted. 10.76.30.22
+2018-03-13 20:01:17,813 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.211.94
+2018-03-13 20:01:17,917 - Server - INFO - Thread: 9488 - Peer request accepted. 10.76.31.152
+2018-03-13 20:01:18,025 - Server - INFO - Thread: 9488 - Peer request accepted. 149.106.60.19
+2018-03-13 20:01:18,029 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.173', 0), ('10.76.30.129', 0), ('10.76.30.22', 0), ('149.106.211.94', 0), ('10.76.31.152', 0), ('149.106.60.19', 0)]
+2018-03-13 20:01:18,030 - Server - WARNING - ============ Server init complete ===========
+2018-03-13 20:01:18,030 - Server - INFO - Started up on port 50000
+2018-03-13 20:01:18,030 - Server - INFO - Thread: 5648 - Start requesting peers. 8 peers currently
+2018-03-13 20:01:18,031 - Server - WARNING - Thread: 5984 - Started updating from peers
+2018-03-13 20:01:18,142 - Server - INFO - Thread: 5984 - Received 11 blocks from 149.106.60.81.
+2018-03-13 20:01:18,881 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.209
+2018-03-13 20:01:18,986 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.204
+2018-03-13 20:01:19,441 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.173', 0), ('10.76.30.129', 0), ('10.76.30.22', 0), ('149.106.211.94', 0), ('10.76.31.152', 0), ('149.106.60.19', 0), ('10.76.31.252', 0)]
+2018-03-13 20:01:19,441 - Server - INFO - Thread: 1152 - Command: PEER_REQUEST - From: 10.76.31.252:41176 - Accepted peer.
+2018-03-13 20:01:19,814 - Server - INFO - Thread: 5648 - Peer request accepted. 10.76.31.252
+2018-03-13 20:01:19,921 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.210
+2018-03-13 20:01:20,028 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.202
+2018-03-13 20:01:20,135 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.208
+2018-03-13 20:01:20,137 - Server - INFO - Thread: 5648 - Peer request failed. 149.106.47.46
+2018-03-13 20:01:20,243 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.208
+2018-03-13 20:01:20,262 - Server - INFO - Thread: 1152 - Command: PEERS_REQUEST - From: 10.76.31.252:41222 - Sent 8 peers to peer
+2018-03-13 20:01:20,347 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.207
+2018-03-13 20:01:20,442 - Server - INFO - Thread: 1152 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:41224 - Received duplicate or invalid message, ignoring
+2018-03-13 20:01:20,453 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.210.123
+2018-03-13 20:01:20,561 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.204
+2018-03-13 20:01:20,668 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.202
+2018-03-13 20:01:20,774 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.204
+2018-03-13 20:01:20,775 - Server - WARNING - Thread: 1152 - Command: UPDATE_REQUEST - From: 10.76.31.252:41244 - Warning: Received invalid UPDATE_REQUEST
+2018-03-13 20:01:20,881 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.210.123
+2018-03-13 20:01:20,898 - Server - INFO - Thread: 5984 - Received 1 blocks from 10.76.31.252.
+2018-03-13 20:01:20,899 - Server - INFO - Thread: 5984 - Warning: Punishing peer 10.76.31.173.
+2018-03-13 20:01:20,899 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.173', 1), ('10.76.30.129', 0), ('10.76.30.22', 0), ('149.106.211.94', 0), ('10.76.31.152', 0), ('149.106.60.19', 0), ('10.76.31.252', 0)]
+2018-03-13 20:01:20,899 - Server - INFO - Thread: 5984 - Warning: Punishing peer 10.76.30.129.
+2018-03-13 20:01:20,900 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 0), ('149.106.211.94', 0), ('10.76.31.152', 0), ('149.106.60.19', 0), ('10.76.31.252', 0)]
+2018-03-13 20:01:20,901 - Server - INFO - Thread: 5984 - Warning: Punishing peer 10.76.30.22.
+2018-03-13 20:01:20,901 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 0), ('10.76.31.152', 0), ('149.106.60.19', 0), ('10.76.31.252', 0)]
+2018-03-13 20:01:20,901 - Server - INFO - Thread: 5984 - Warning: Punishing peer 149.106.211.94.
+2018-03-13 20:01:20,902 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 1), ('10.76.31.152', 0), ('149.106.60.19', 0), ('10.76.31.252', 0)]
+2018-03-13 20:01:20,902 - Server - INFO - Thread: 5984 - Warning: Punishing peer 10.76.31.152.
+2018-03-13 20:01:20,903 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 1), ('10.76.31.152', 1), ('149.106.60.19', 0), ('10.76.31.252', 0)]
+2018-03-13 20:01:20,903 - Server - INFO - Thread: 5984 - Warning: Punishing peer 149.106.60.19.
+2018-03-13 20:01:20,903 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 1), ('10.76.31.152', 1), ('149.106.60.19', 1), ('10.76.31.252', 0)]
+2018-03-13 20:01:20,903 - Server - WARNING - Thread: 5984 - Completed updating from peers
+2018-03-13 20:01:20,985 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.207
+2018-03-13 20:01:21,093 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.210.123
+2018-03-13 20:01:21,182 - Server - INFO - Thread: 5984 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:41260 - Received duplicate or invalid message, ignoring
+2018-03-13 20:01:21,200 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.207
+2018-03-13 20:01:21,203 - Server - INFO - Thread: 5648 - Peer request failed. 10.76.31.177
+2018-03-13 20:01:21,310 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.205
+2018-03-13 20:01:21,416 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.201
+2018-03-13 20:01:21,524 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.208
+2018-03-13 20:01:21,632 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.205
+2018-03-13 20:01:21,736 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.208
+2018-03-13 20:01:21,843 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.203
+2018-03-13 20:01:21,949 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.202
+2018-03-13 20:01:22,057 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.210.123
+2018-03-13 20:01:22,883 - Server - INFO - Thread: 5984 - Command: BLOCK_BROADCAST - From: 149.106.211.94:55828 - Received new block to process and broadcast
+2018-03-13 20:01:22,889 - Server - INFO - Broadcasting block to peers.
+2018-03-13 20:01:23,165 - Server - INFO - Thread: 5648 - Peer request failed. 10.76.30.214
+2018-03-13 20:01:23,271 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.210
+2018-03-13 20:01:23,376 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.206
+2018-03-13 20:01:23,482 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.210.123
+2018-03-13 20:01:23,496 - Server - INFO - Thread: 5984 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:41326 - Received duplicate or invalid message, ignoring
+2018-03-13 20:01:23,589 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.203
+2018-03-13 20:01:23,694 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.210
+2018-03-13 20:01:23,738 - Server - INFO - Broadcasting complete.
+2018-03-13 20:01:23,796 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.209
+2018-03-13 20:01:23,904 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.203
+2018-03-13 20:01:24,010 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.209
+2018-03-13 20:01:24,115 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.203
+2018-03-13 20:01:24,221 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.208
+2018-03-13 20:01:24,328 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.206
+2018-03-13 20:01:25,440 - Server - INFO - Thread: 5648 - Peer request failed. 10.76.30.214
+2018-03-13 20:01:25,543 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.201
+2018-03-13 20:01:25,649 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.201
+2018-03-13 20:01:25,755 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.207
+2018-03-13 20:01:25,860 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.205
+2018-03-13 20:01:25,964 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.205
+2018-03-13 20:01:25,966 - Server - INFO - Thread: 5648 - Peer request failed. 149.106.47.48
+2018-03-13 20:01:26,073 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.206
+2018-03-13 20:01:26,178 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.210
+2018-03-13 20:01:26,284 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.209
+2018-03-13 20:01:26,390 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.202
+2018-03-13 20:01:26,493 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.201
+2018-03-13 20:01:26,598 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.201
+2018-03-13 20:01:26,706 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.206
+2018-03-13 20:01:26,811 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.203
+2018-03-13 20:01:26,918 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.204
+2018-03-13 20:01:27,023 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.207
+2018-03-13 20:01:27,025 - Server - INFO - Thread: 5648 - Peer request failed. 149.106.47.47
+2018-03-13 20:01:27,131 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.202
+2018-03-13 20:01:27,133 - Server - INFO - Thread: 5648 - Peer request failed. 149.106.60.204
+2018-03-13 20:01:27,239 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.210.123
+2018-03-13 20:01:27,344 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.208
+2018-03-13 20:01:27,450 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.210
+2018-03-13 20:01:27,554 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.209
+2018-03-13 20:01:27,661 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.205
+2018-03-13 20:01:27,765 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.204
+2018-03-13 20:01:27,767 - Server - INFO - Thread: 5648 - Peer request failed. 149.106.47.48
+2018-03-13 20:01:27,769 - Server - INFO - Thread: 5648 - Peer request failed. 149.106.47.48
+2018-03-13 20:01:27,875 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.209
+2018-03-13 20:01:27,979 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.206
+2018-03-13 20:01:28,086 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.205
+2018-03-13 20:01:28,193 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.202
+2018-03-13 20:01:28,297 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.207
+2018-03-13 20:01:28,300 - Server - INFO - Thread: 5648 - Peer request failed. 149.106.47.48
+2018-03-13 20:01:28,408 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.201
+2018-03-13 20:01:28,513 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.204
+2018-03-13 20:01:28,620 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.210
+2018-03-13 20:01:29,731 - Server - INFO - Thread: 5648 - Peer request failed. 10.76.30.214
+2018-03-13 20:01:29,841 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.206
+2018-03-13 20:01:29,948 - Server - WARNING - Thread: 5648 - Peer request denied. 149.106.62.203
+2018-03-13 20:01:29,949 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 1), ('10.76.31.152', 1), ('149.106.60.19', 1), ('10.76.31.252', 0)]
+2018-03-13 20:01:29,949 - Server - WARNING - Thread: 5648 - Complete requesting peers. 9 peers currently
+2018-03-13 20:01:32,508 - Server - INFO - Thread: 5648 - Command: BLOCK_BROADCAST - From: 149.106.211.94:55858 - Received new block to process and broadcast
+2018-03-13 20:01:32,600 - Server - INFO - Broadcasting block to peers.
+2018-03-13 20:01:33,738 - Server - WARNING - Peer failed to receive broadcasting
+2018-03-13 20:01:33,738 - Server - INFO - Thread: 816 - Warning: Punishing peer 10.76.31.252.
+2018-03-13 20:01:33,738 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 1), ('10.76.31.152', 1), ('149.106.60.19', 1), ('10.76.31.252', 1)]
+2018-03-13 20:01:33,738 - Server - INFO - Broadcasting complete.
+2018-03-13 20:01:36,562 - Server - WARNING - Thread: 5648 - Command: PEER_REQUEST - From: 10.76.31.252:41398 - Already accepted peer.
+2018-03-13 20:01:37,823 - Server - INFO - Thread: 5648 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50754 - Received duplicate or invalid message, ignoring
+2018-03-13 20:01:38,407 - Server - WARNING - Thread: 5648 - Command: UPDATE_REQUEST - From: 10.76.31.252:41414 - Warning: Received invalid UPDATE_REQUEST
+2018-03-13 20:01:39,390 - Server - INFO - Thread: 5648 - Command: PEERS_REQUEST - From: 10.76.31.252:41430 - Sent 8 peers to peer
+2018-03-13 20:01:50,362 - Server - INFO - Thread: 5648 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:41630 - Received duplicate or invalid message, ignoring
+2018-03-13 20:01:52,873 - Server - INFO - Thread: 5648 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50794 - Received duplicate or invalid message, ignoring
+2018-03-13 20:01:53,493 - Server - INFO - Thread: 5648 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:41674 - Received duplicate or invalid message, ignoring
+2018-03-13 20:01:54,230 - Server - WARNING - Thread: 5648 - Command: UPDATE_REQUEST - From: 149.106.211.94:55888 - Warning: Received invalid UPDATE_REQUEST
+2018-03-13 20:02:07,812 - Server - INFO - Thread: 5648 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50834 - Received duplicate or invalid message, ignoring
+2018-03-13 20:02:08,534 - Server - INFO - Thread: 5648 - Command: MESSAGE_BROADCAST - From: 10.76.31.252:41818 - Received duplicate or invalid message, ignoring
+2018-03-13 20:02:18,054 - Server - INFO - Thread: 5648 - Command: BLOCK_BROADCAST - From: 149.106.211.94:55918 - Received new block to process and broadcast
+2018-03-13 20:02:18,069 - Server - INFO - Broadcasting block to peers.
+2018-03-13 20:02:18,818 - Server - WARNING - Peer failed to receive broadcasting
+2018-03-13 20:02:18,818 - Server - INFO - Thread: 816 - Warning: Punishing peer 10.76.31.252.
+2018-03-13 20:02:18,819 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 1), ('10.76.31.152', 1), ('149.106.60.19', 1), ('10.76.31.252', 2)]
+2018-03-13 20:02:18,819 - Server - INFO - Broadcasting complete.
+2018-03-13 20:02:22,843 - Server - INFO - Thread: 5648 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50874 - Received duplicate or invalid message, ignoring
+2018-03-13 20:02:22,922 - Server - INFO - Broadcasting block to peers.
+2018-03-13 20:02:23,660 - Server - WARNING - Peer failed to receive broadcasting
+2018-03-13 20:02:23,661 - Server - INFO - Thread: 816 - Warning: Punishing peer 10.76.31.252.
+2018-03-13 20:02:23,661 - Server - INFO - Wrote peers to peers.txt: [('149.106.60.81', 0), ('10.76.31.173', 1), ('10.76.30.129', 1), ('10.76.30.22', 1), ('149.106.211.94', 1), ('10.76.31.152', 1), ('149.106.60.19', 1), ('10.76.31.252', 3)]
+2018-03-13 20:02:23,661 - Server - INFO - Broadcasting complete.
+2018-03-13 20:02:28,483 - Server - WARNING - Thread: 5648 - Command: PEER_REQUEST - From: 10.76.31.252:41828 - Already accepted peer.
+2018-03-13 20:02:30,361 - Server - INFO - Thread: 5648 - Command: PEERS_REQUEST - From: 10.76.31.252:41866 - Sent 8 peers to peer
+2018-03-13 20:02:31,408 - Server - WARNING - Thread: 5648 - Command: UPDATE_REQUEST - From: 10.76.31.252:41889 - Warning: Received invalid UPDATE_REQUEST
+2018-03-13 20:02:37,793 - Server - INFO - Thread: 5648 - Command: MESSAGE_BROADCAST - From: 149.106.60.81:50914 - Received duplicate or invalid message, ignoring
