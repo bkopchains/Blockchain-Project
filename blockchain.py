@@ -205,6 +205,22 @@ class Blockchain:
                 self.blocksMined.put(tempBlock)
                 self.allBlocks.append(tempBlock)
 
+
+    #returns most recent block of longest chain
+    def findLongestChain(self):
+        parentHashes = []
+        for block in self.allBlocks:
+            parentHash = block.parent
+            parentHashes.append(parentHash)
+        #pseudo-code for how we would have liked to implement this function
+        #1. check if any parents in parentHashes are the same
+        #2. if any blocks are found to have the same parent hash, we know there is a split chain there
+        #3. check the number of descending nodes from the two blocks that have the same parent hash
+        #4. the one with more descending parents is the longest chain!
+        #5. return most recent block of longest chain
+
+
+
     # Writes 4 lines to the stats file
     def writeToStats(self):
         f = open("ledger.txt", "r")
